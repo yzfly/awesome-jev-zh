@@ -374,6 +374,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**asfarsadewa/human-compiler**](https://github.com/asfarsadewa/human-compiler) | ![](https://badgen.net/github/stars/asfarsadewa/human-compiler) | 粘贴职场废话，Jev 给「被动攻击 / 紧急感 / 信息密度」打分，代码按 rustc 风格报诊断。在线：[human-compiler.asfarlab.fun](https://human-compiler.asfarlab.fun) |
 | [**santos-sanz/jev-audio-beeper**](https://github.com/santos-sanz/jev-audio-beeper) | ![](https://badgen.net/github/stars/santos-sanz/jev-audio-beeper) | 低延迟脏话检测：Jev 判定后 ffmpeg 在约 466ms 内叠一声 beep |
 | [**TarunTomar122/jev-askable-arm**](https://github.com/TarunTomar122/jev-askable-arm) | ![](https://badgen.net/github/stars/TarunTomar122/jev-askable-arm) | 仿真 Franka 机械臂：英文目标 zero-shot，Jev 把硬编码原语串起来 |
+| [**kylemclaren/jevql**](https://github.com/kylemclaren/jevql) | ![](https://badgen.net/github/stars/kylemclaren/jevql) | 类 psql 的命令行工具与 Go/TS/Python SDK，无需扩展即可在原生 Postgres 中使用 jev() 语义条件：SQL 在服务端执行，剩余行由 Jev 批量判断，结果会缓存 |
 
 ---
 
