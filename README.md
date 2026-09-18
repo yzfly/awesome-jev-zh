@@ -458,6 +458,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**siliconkernel/vllm-jev-decison**](https://github.com/siliconkernel/vllm-jev-decison) | ![](https://badgen.net/github/stars/siliconkernel/vllm-jev-decison) | 给 vLLM 加「只分类」模式：有限 schema 候选打分 + 概率 |
 | [**genai-craft/openvons**](https://github.com/genai-craft/openvons) | ![](https://badgen.net/github/stars/genai-craft/openvons) | 日文向 open-Jev：文本 / 图像 / 日语语音命令的概率判断层 |
 | [**stephanj/parallelConstraintDecoding**](https://github.com/stephanj/parallelConstraintDecoding) | ![](https://badgen.net/github/stars/stephanj/parallelConstraintDecoding) | Java + Python 双版本的并行受限解码实现 |
+| [**zhengxuyu/litjev**](https://github.com/zhengxuyu/litjev) | ![](https://badgen.net/github/stars/zhengxuyu/litjev) | Jev 的复现：把任意 Qwen 模型变成快速决策模型，提供与 Jev 完全相同的 /v1/systemone schema（Choice、Score、Noul），不训练、不生成回答文本，附 MMLU-Pro 直答评测 |
 | [**NullPo-jp/PocketJev**](https://github.com/NullPo-jp/PocketJev) | ![](https://badgen.net/github/stars/NullPo-jp/PocketJev) | iPhone 端侧视觉判断：MLX + Qwen3-VL 选项 logits。相机 + 三选一，约 1 秒，不存照片 |
 
 ### 独立评测
