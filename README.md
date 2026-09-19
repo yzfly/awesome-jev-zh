@@ -434,6 +434,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**romaluev/jev-ego**](https://github.com/romaluev/jev-ego) | ![](https://badgen.net/github/stars/romaluev/jev-ego) | [ego lite](https://lite.ego.app/) 上的浏览器 Agent，observe / act / suggest / step CLI |
 | [**samtay32/jev-system-architect**](https://github.com/samtay32/jev-system-architect) | ![](https://badgen.net/github/stars/samtay32/jev-system-architect) | 专找代码里脆弱的语义逻辑，改写成 Choice / Score / Noul 边界 |
 | [**AbdelStark/bicameral**](https://github.com/AbdelStark/bicameral) | ![](https://badgen.net/github/stars/AbdelStark/bicameral) | Pi 编程 harness：LLM 写代码，Jev 提供策略、循环检测与 review 的类型化反射。**明确不是沙箱** |
+| [**shitianfang/jev-use**](https://github.com/shitianfang/jev-use) | ![](https://badgen.net/github/stars/shitianfang/jev-use) | 把 Claude Code / Codex / pi 里不需要输出文本的步骤交给 Jev 判断，需要写字或拿不准的退回 LLM |
 
 ---
 
