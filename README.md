@@ -374,6 +374,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**asfarsadewa/human-compiler**](https://github.com/asfarsadewa/human-compiler) | ![](https://badgen.net/github/stars/asfarsadewa/human-compiler) | 粘贴职场废话，Jev 给「被动攻击 / 紧急感 / 信息密度」打分，代码按 rustc 风格报诊断。在线：[human-compiler.asfarlab.fun](https://human-compiler.asfarlab.fun) |
 | [**santos-sanz/jev-audio-beeper**](https://github.com/santos-sanz/jev-audio-beeper) | ![](https://badgen.net/github/stars/santos-sanz/jev-audio-beeper) | 低延迟脏话检测：Jev 判定后 ffmpeg 在约 466ms 内叠一声 beep |
 | [**TarunTomar122/jev-askable-arm**](https://github.com/TarunTomar122/jev-askable-arm) | ![](https://badgen.net/github/stars/TarunTomar122/jev-askable-arm) | 仿真 Franka 机械臂：英文目标 zero-shot，Jev 把硬编码原语串起来 |
+| [**chy4pro/jev-for-chrome**](https://github.com/chy4pro/jev-for-chrome) | ![](https://badgen.net/github/stars/chy4pro/jev-for-chrome) | Jev Ultrafast 的非官方 Chrome 扩展（Manifest V3）移植：Jev 一次请求同时选出操作和 DOM 元素，只有打字时才调用小文本模型，直接跑在用户自己的标签页里（OpenRouter / TypeSafe / Cloudflare 三种渠道）；附 17 个任务的 headless Chromium 测试套件和完整轨迹（仓库 docs/ 目录，同一套任务多轮 13–14/17）。 |
 
 ---
 
