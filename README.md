@@ -374,6 +374,9 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**asfarsadewa/human-compiler**](https://github.com/asfarsadewa/human-compiler) | ![](https://badgen.net/github/stars/asfarsadewa/human-compiler) | 粘贴职场废话，Jev 给「被动攻击 / 紧急感 / 信息密度」打分，代码按 rustc 风格报诊断。在线：[human-compiler.asfarlab.fun](https://human-compiler.asfarlab.fun) |
 | [**santos-sanz/jev-audio-beeper**](https://github.com/santos-sanz/jev-audio-beeper) | ![](https://badgen.net/github/stars/santos-sanz/jev-audio-beeper) | 低延迟脏话检测：Jev 判定后 ffmpeg 在约 466ms 内叠一声 beep |
 | [**TarunTomar122/jev-askable-arm**](https://github.com/TarunTomar122/jev-askable-arm) | ![](https://badgen.net/github/stars/TarunTomar122/jev-askable-arm) | 仿真 Franka 机械臂：英文目标 zero-shot，Jev 把硬编码原语串起来 |
+| [**valentynkit/jev-commit**](https://github.com/valentynkit/jev-commit) | ![](https://badgen.net/github/stars/valentynkit/jev-commit) | pre-commit hook：一次 Jev 调用判断提交信息是否对得上暂存的 diff，顺带查调试残留、未提及的改动，撞到密钥直接拦截，其余只警告 |
+| [**valentynkit/jev.nvim**](https://github.com/valentynkit/jev.nvim) | ![](https://badgen.net/github/stars/valentynkit/jev.nvim) | Neovim 插件：用大白话问当前 buffer 一个问题，Treesitter 拆出函数，Jev 逐个打分，答案按概率排进 quickfix |
+| [**valentynkit/jev-skip**](https://github.com/valentynkit/jev-skip) | ![](https://badgen.net/github/stars/valentynkit/jev-skip) | 浏览器扩展：读字幕轨，在片头结束前就把每段赞助概率画上 YouTube 进度条，不依赖众包数据库。23 个视频上测得赞助时长命中率是 SponsorBlock 的 77%，每个视频 $0.0008 |
 
 ---
 
@@ -402,6 +405,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [Jev Guard](https://guard-jev.vercel.app) | 🔗 在线 | 评论审核 playground |
 | [Jev Room](https://jev-room.moe136231.chatgpt.site) | 🔗 在线 | 一句话 → 六个房间设定，Jev 选，应用渲染 |
 | [官方智能家居 demo](https://docs.typesafe.ai/demos/smart-home) | 🔗 官方 | 演示**投机扇出**：一次问很多题，代码留下有用的，LLM 只管拆复合指令和闲聊 |
+| [**valentynkit/jev-plays-pokemon-red**](https://github.com/valentynkit/jev-plays-pokemon-red) | ![](https://badgen.net/github/stars/valentynkit/jev-plays-pokemon-red) | PyBoy 上打宝可梦红：路线和数值算法都在代码里，Jev 只在分支点选，每回合战斗都用 Brier 分数把「会不会昏厥」的预测拿 RAM 里的实际结果打分 |
 
 ---
 
@@ -434,6 +438,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**romaluev/jev-ego**](https://github.com/romaluev/jev-ego) | ![](https://badgen.net/github/stars/romaluev/jev-ego) | [ego lite](https://lite.ego.app/) 上的浏览器 Agent，observe / act / suggest / step CLI |
 | [**samtay32/jev-system-architect**](https://github.com/samtay32/jev-system-architect) | ![](https://badgen.net/github/stars/samtay32/jev-system-architect) | 专找代码里脆弱的语义逻辑，改写成 Choice / Score / Noul 边界 |
 | [**AbdelStark/bicameral**](https://github.com/AbdelStark/bicameral) | ![](https://badgen.net/github/stars/AbdelStark/bicameral) | Pi 编程 harness：LLM 写代码，Jev 提供策略、循环检测与 review 的类型化反射。**明确不是沙箱** |
+| [**valentynkit/jev-belay**](https://github.com/valentynkit/jev-belay) | ![](https://badgen.net/github/stars/valentynkit/jev-belay) | Claude Code 的 Stop hook：读 transcript 找证据，只有文件改了且没有通过检查时才花一次四问 Jev 调用判断是否真的做完了，出错一律放行 |
 
 ---
 
