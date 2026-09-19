@@ -424,6 +424,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**y0usaf/pi-jev**](https://github.com/y0usaf/pi-jev) | ![](https://badgen.net/github/stars/y0usaf/pi-jev) | Pi 扩展：影子模式工具调用门控、输出评判、类型化 `jev_ask` |
 | [**shantanugoel/ask-jev-skill**](https://github.com/shantanugoel/ask-jev-skill) | ![](https://badgen.net/github/stars/shantanugoel/ask-jev-skill) | Hermes Skill：Agent 需要有界决策时去问 Jev |
 | [**0xNatoshi/jev-codex-router**](https://github.com/0xNatoshi/jev-codex-router) | ![](https://badgen.net/github/stars/0xNatoshi/jev-codex-router) | Codex 每轮路由：Jev 选模型、思考深度和速度模式 |
+| [**supercorp-ai/supercov**](https://github.com/supercorp-ai/supercov) | ![](https://badgen.net/github/stars/supercorp-ai/supercov) | 给编程 Agent 的代码质量与测试覆盖率：Jev 给每个源文件打分，Agent 就知道先修什么 |
 | [**nidhi-singh02/agent-router**](https://github.com/nidhi-singh02/agent-router) | ![](https://badgen.net/github/stars/nidhi-singh02/agent-router) | CLI 按任务挑 Cursor / Claude Code / Codex / OpenCode + 模型档位，然后直接启动 |
 | [**GhalebDweikat/winnow**](https://github.com/GhalebDweikat/winnow) | ![](https://badgen.net/github/stars/GhalebDweikat/winnow) | Claude Code 的校准上下文筛子：每个工具结果都被判一次再决定留不留 |
 | [**blakestone-x/jev-mcp**](https://github.com/blakestone-x/jev-mcp) | ![](https://badgen.net/github/stars/blakestone-x/jev-mcp) | Python MCP：classify / score / check / match / screen |
