@@ -680,6 +680,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**romaluev/jev-ego**](https://github.com/romaluev/jev-ego) | ![](https://badgen.net/github/stars/romaluev/jev-ego) | [ego lite](https://lite.ego.app/) 上的浏览器 Agent，observe / act / suggest / step CLI |
 | [**AbdelStark/bicameral**](https://github.com/AbdelStark/bicameral) | ![](https://badgen.net/github/stars/AbdelStark/bicameral) | Pi 编程 harness：LLM 写代码，Jev 提供策略、循环检测与 review 的类型化反射。**明确不是沙箱** |
 | [**samtay32/jev-system-architect**](https://github.com/samtay32/jev-system-architect) | ![](https://badgen.net/github/stars/samtay32/jev-system-architect) | 专找代码里脆弱的语义逻辑，改写成 Choice / Score / Noul 边界 |
+| [**xinyao27/jevonian**](https://github.com/xinyao27/jevonian) | ![](https://badgen.net/github/stars/xinyao27/jevonian) | 本机跑的 OpenAI / Anthropic / Responses 兼容代理：Agent 指向 `http://127.0.0.1:8787/v1`，用 `jevonian/auto` 时**一次 Jev 请求同时决定走哪个模型、用多深的思考**，状态来自会话（近期消息与工具结果、连续报错次数、上下文余量、配额、候选能力、切换模型的缓存代价）。候选筛选和全部阈值由确定性代码负责，指定具体模型或显式 `jevonian/<route>` 时完全不调用 Jev。每次决策都落进本地台账：实际服务的模型与供应商、理由、真实 token 用量、缓存读取、估算成本。**成本是从价格表估算的，不是账单回读；缓存数字也是估算**（`prefixMatch` 仍是 `unknown`）。AGPL-3.0 |
 
 ---
 
