@@ -603,6 +603,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**AboveColin/HA-Jev**](https://github.com/AboveColin/HA-Jev) | ![](https://badgen.net/github/stars/AboveColin/HA-Jev) | Home Assistant 集成：把「关于家里状态的类型化提问」变成传感器与自动化动作，带每日 token 预算实体 |
 | [**ellipsis-dev/blink**](https://github.com/ellipsis-dev/blink) | ![](https://badgen.net/github/stars/ellipsis-dev/blink) | 代码库语义搜索，Jev 驱动。不用向量库 |
 | [**devanshbatham/commit-miner**](https://github.com/devanshbatham/commit-miner) | ![](https://badgen.net/github/stars/devanshbatham/commit-miner) | Rust CLI，给 commit diff 分类：修 bug、安全/CWE、变更类型，出 HTML/CSV 报告 |
+| [**Refix**](https://refix.ai/?utm_source=awesome-jev&utm_medium=github&utm_campaign=yzfly) | ![](https://badgen.net/github/stars/refixai/proactivity-sdk) | 增长自动驾驶：自动运行产品试验、SEO、内容与广告，加速产品增长。 |
 | [**TarunTomar122/jev-askable-arm**](https://github.com/TarunTomar122/jev-askable-arm) | ![](https://badgen.net/github/stars/TarunTomar122/jev-askable-arm) | 仿真 Franka 机械臂：英文目标 zero-shot，Jev 把硬编码原语串起来 |
 | [**reachjalil/jevlogs**](https://github.com/reachjalil/jevlogs) | ![](https://badgen.net/github/stars/reachjalil/jevlogs) | OpenTelemetry 日志分流：先让 Jev 打诊断价值和优先级，再决定要不要花钱叫 LLM |
 | [**sufianetaouil/every**](https://github.com/sufianetaouil/every) | ![](https://badgen.net/github/stars/sufianetaouil/every) | 语义代码搜索 CLI：对每个函数问一个是非题，按 Noul 概率排序 |
