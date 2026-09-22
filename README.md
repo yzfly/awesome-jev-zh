@@ -742,6 +742,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**jmanhype/jev-dspy-lab**](https://github.com/jmanhype/jev-dspy-lab) | ![](https://badgen.net/github/stars/jmanhype/jev-dspy-lab) | DSPy 配套评测：录制并重放调用，测校准、选择性风险、置信度弃权、延迟、成本 |
 | [**bitnovus/jev-spam-eval**](https://github.com/bitnovus/jev-spam-eval) | ![](https://badgen.net/github/stars/bitnovus/jev-spam-eval) | 18,514 封邮件：一段**写出来的**垃圾邮件定义拿到 **98.3%**，和用 ~14,800 条标注训练的 TF-IDF（98.4%）打平，两者平均后 **99.2%**。**最关键的是分布漂移**——换到 2026 年的新邮件，同一个问题仍有 97.3%，TF-IDF 掉到 72.5%。作者自己标注了「判据是看过错误样本后写的」这一 caveat |
 | [**teyhouse/jev-secret-detection**](https://github.com/teyhouse/jev-secret-detection) | ![](https://badgen.net/github/stars/teyhouse/jev-secret-detection) | 测量 Jev 在代码片段里识别真实密钥凭证的能力 |
+| [**scd13150/jev-field-notes**](https://github.com/scd13150/jev-field-notes) | ![](https://badgen.net/github/stars/scd13150/jev-field-notes) | 三个实测应用（实时格斗游戏 / 情感语音 / SVG 能力探针）加一份边界分析：8,000+ 次调用、17,156,453 输入 token、合计 **$0.72**，评分基准取**指令流与字节级布局**而非人标。**遮名消融**证明其优势主要来自读标识符命名——同一角色分类任务真名 0.588、遮名 0.302，低于「永远答多数类」的 0.42，其中 **+0.286 来自命名**；**零样本路由** 158/158 全押一个从未被引用的诱饵槽位（置信度 0.65–0.84）准确率 **0.000**，而免费 1-NN 基线 **0.987**。中文侧与 judgekit 互补：任务与英文问题组固定、**只把 state 换成中文**，英文 3/3、中文 1/3，但两个错答置信度 **0.31 / 0.53**、三个正答全部 **≥0.82**，故约 0.6 门限可自动拦截。局限写明：n 极小（3 例，方向性证据非结论）、用中文写「问题」未测 |
 
 > **中文场景的公开评测，目前只有 judgekit 一份。** 130 条自建样本、作者自己标注了「mini 集人工构建、LLM 对照组还在补」，样本量撑不起结论，只能算一个起点。谁做过更大规模的中文分类、内容审核或客服工单对比测试，欢迎把数据发过来——结论对 Jev 有利还是不利都一样有价值。这仍是这份列表最缺的一块。
 
