@@ -728,6 +728,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 
 | 项目 | Star | 结论摘要 |
 | :-- | :-- | :-- |
+| [**zilliztech/memsearch**](https://github.com/zilliztech/memsearch) | ![](https://badgen.net/github/stars/zilliztech/memsearch) | 面向编程 Agent 的 Markdown 记忆检索；[中英文重排评测](https://github.com/zilliztech/memsearch/blob/main/evaluation/reranking-evaluation.md)对比原始排序、Jev 和专用 reranker，公开整体、语言及问题类型维度的结果与复现方法 |
 | [**vinilana/jev-eval-agent**](https://github.com/vinilana/jev-eval-agent) | ![](https://badgen.net/github/stars/vinilana/jev-eval-agent) | 早期 Jev 测试的公开评测 harness |
 | [**nekuda-ai/WindTunnel**](https://github.com/nekuda-ai/WindTunnel) | ![](https://badgen.net/github/stars/nekuda-ai/WindTunnel) | WebMCP 基准，21 种配置横向比成功率 / 成本 / 耗时。Jev + Mercury 2.5 走 WebMCP **49/49 全解**、每次中位 $0.0011、3.2 秒，排第一；同一对模型改走 ultrafast DOM 控制只剩 25/49，单次更便宜（$0.0008）但成得少。少见的第三方横向基准，成本和时延都列了 |
 | [**fstandhartinger/jevbench**](https://github.com/fstandhartinger/jevbench) | ![](https://badgen.net/github/stars/fstandhartinger/jevbench) | **目前覆盖面最广的第三方横评**：每个系统跑同样的 534 道冻结决策题（其中 220 道 hard 题由 Claude Opus 5 与 GPT-5.6 写、交叉评审，开跑前就冻结并哈希，一半留出不公开）。**榜上共 42 行结果、36 个不同项目**：**38 行进榜**（Jev 本体 1、开源复现 28 行对应 23 个项目、通用分类器 5、闭源决策 API 1、LLM 基线 3），外加 1 个名誉提名（classifier.dev，fast 档本身就是 Jev，排进去等于让 Jev 跟自己比）和 3 行只跑完一部分的。按智能 / 校准 / 速度 / 成本四轴各 25% 取**几何平均**——某一轴弱会把总分拽下去。v1.2.10 榜首 Jev 1.13.0 **75.4**，SemIf 74.7、djev 74.3 紧随其后。成本列的单位是**每千次决策**而不是每千 token，作者还专门发过一版修正把这个单位写清楚。局限写得很坦白：自托管与 demo 端点的延迟统一 ×2 + 0.15s 是**假设不是实测**。一人业余项目，与 TypeSafe 无关 |
