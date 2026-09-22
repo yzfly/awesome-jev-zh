@@ -723,6 +723,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**NullPo-jp/PocketJev**](https://github.com/NullPo-jp/PocketJev) | ![](https://badgen.net/github/stars/NullPo-jp/PocketJev) | iPhone 端侧视觉判断：MLX + Qwen3-VL 选项 logits。相机 + 三选一，约 1 秒，不存照片 |
 | [**Octalab-Inc/jqv**](https://github.com/Octalab-Inc/jqv) | ![](https://badgen.net/github/stars/Octalab-Inc/jqv) | 按 [Hume 那篇架构拆解](https://archerhume.com/posts/jevs-architecture-unmasked/) 在 stock Qwen3 上复刻 Jev 的推理结构：state 预填一次、每个问题在块状注意力掩码后走独立分支、直接读选项字母 logits，单一拟合温度做校准。**五种推理结构（generate / naive / kvcache / packed / shared）可在同一模型同一提示上切换对比**，适合拿来搞清楚这套结构各步分别值多少 |
 | [**isHeSatoshi/smalljev**](https://github.com/isHeSatoshi/smalljev) | ![](https://badgen.net/github/stars/isHeSatoshi/smalljev) | MiniCPM5-2B-Base + LoRA 与原生决策头，Apache-2.0，主打「在你妈的手机上也能跑」。作者主动披露：训练配方对着 JevBench 的公开题型与来源族做过 hill-climbing，读它的自测分时要记得这点 |
+| [**Hangzhi/diffusion-jev-sglang**](https://github.com/Hangzhi/diffusion-jev-sglang) | ![](https://badgen.net/github/stars/Hangzhi/diffusion-jev-sglang) | 用 DiffusionGemma + SGLang 实现 Jev 风格的图文决策，提供[在线涂鸦识别](https://diffusion-jev-sglang.vercel.app/#doodle)、花卉分类和表情预测，附中文 README、部署步骤与公开评测；未经微调，选项概率未经校准 |
 
 ### 独立评测
 
