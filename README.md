@@ -609,6 +609,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**santos-sanz/jev-audio-beeper**](https://github.com/santos-sanz/jev-audio-beeper) | ![](https://badgen.net/github/stars/santos-sanz/jev-audio-beeper) | 低延迟脏话检测：Jev 判定后 ffmpeg 在约 466ms 内叠一声 beep |
 | [**asfarsadewa/human-compiler**](https://github.com/asfarsadewa/human-compiler) | ![](https://badgen.net/github/stars/asfarsadewa/human-compiler) | 粘贴职场废话，Jev 给「被动攻击 / 紧急感 / 信息密度」打分，代码按 rustc 风格报诊断。在线：[human-compiler.asfarlab.fun](https://human-compiler.asfarlab.fun) |
 | [**classifier.dev**](https://classifier.dev/) | — | **托管的零门槛分类 API，底座就是 Jev 1.13**（返回体里写着 `model: jev-1.13.0`）。不用注册、不用 key、不用绑卡，一条 curl 就能跑；批量一次 1,000 条，实测 20ms/条。代价是只剩分类一个原语、选项不能带描述、Jev 挂了会静默回退到 OpenRouter 上的 LLM 链（看 `modelsUsed` 字段才知道）。对比见 [体验渠道](#-体验渠道) |
+| [**Nisaka520/JevBystander**](https://github.com/Nisaka520/JevBystander) | ![](https://badgen.net/github/stars/Nisaka520/JevBystander) | 微信消息判读的安卓无障碍版：只读当前聊天窗口里**已经显示**的文字，一次向 Jev 问 7 个问题（意图 10 格、情绪 9 格的完整概率分布、着急 0–3 分、建议姿态 11 格），固定弹 3 条 Toast，**不生成回复文案、不注入输入框、不发送、不截屏**。关系用「联系人表 + 别名」按会话匹配后当背景塞进 state，所以同一句「我爱你」在情侣和同事下判定不同；零第三方依赖（手写 JSON + HttpURLConnection）APK 只有 **861 KB**，35 个单测，真接口实测判读 **0.97 秒** |
 
 ---
 
