@@ -785,6 +785,13 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 
 </details>
 
+社区实践教程：
+
+| 项目 | Star | 说明 |
+| :-- | :-- | :-- |
+| [**milvus-io/bootcamp**](https://github.com/milvus-io/bootcamp/tree/master/bootcamp/RAG/search_with_jev) | ![](https://badgen.net/github/stars/milvus-io/bootcamp) | 9 篇可运行的英文 Notebook：用 Gemini 做嵌入、Milvus 做检索，再用 Jev 做重排、过滤、停搜、路由、缓存复用、数据筛选、护栏和评估；示例数据为合成数据 |
+
+
 ---
 
 ## 📰 文章
