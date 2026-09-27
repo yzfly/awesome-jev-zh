@@ -274,6 +274,7 @@ curl -X POST https://classifier.dev/ -H "Content-Type: application/json" \
 | [kev-0.5b](https://github.com/jaredpalmer/kev) | Qwen2.5-0.5B + LoRA | 0.5B | ~160 ms (fp32) | — | 消费级即可 | typed questions | Apache-2.0 |
 | [kev-4b](https://github.com/jaredpalmer/kev) | Qwen3-4B + LoRA | 4B | ~1 s (bf16) | 3 题 277ms (M5) | 32GB Mac | typed questions | Apache-2.0 |
 | [SemIf](https://github.com/TheoLeeCJ/SemIf) | Qwen3.5-4B | 4B | 1.02 s | 20 决策/秒（共享 state） | RTX 3090 / MLX | 直读选项 logits | MIT |
+| [jevos](https://github.com/feder-cr/jev) | MiniCPM5-1B（裁剪至 17 层） | 1B | 54 ms（短）/ 220 ms（长） | — | 笔记本 CPU（16 线程，无需 GPU） | 单 logit 输出头，仅 noul（yes/no），choice/score 返回 422 | MIT |
 
 两点值得单独说：
 
