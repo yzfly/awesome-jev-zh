@@ -608,6 +608,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**sufianetaouil/every**](https://github.com/sufianetaouil/every) | ![](https://badgen.net/github/stars/sufianetaouil/every) | 语义代码搜索 CLI：对每个函数问一个是非题，按 Noul 概率排序 |
 | [**santos-sanz/jev-audio-beeper**](https://github.com/santos-sanz/jev-audio-beeper) | ![](https://badgen.net/github/stars/santos-sanz/jev-audio-beeper) | 低延迟脏话检测：Jev 判定后 ffmpeg 在约 466ms 内叠一声 beep |
 | [**asfarsadewa/human-compiler**](https://github.com/asfarsadewa/human-compiler) | ![](https://badgen.net/github/stars/asfarsadewa/human-compiler) | 粘贴职场废话，Jev 给「被动攻击 / 紧急感 / 信息密度」打分，代码按 rustc 风格报诊断。在线：[human-compiler.asfarlab.fun](https://human-compiler.asfarlab.fun) |
+| [**sunyasheng/JevDeepResearch**](https://github.com/sunyasheng/JevDeepResearch) | ![](https://badgen.net/github/stars/sunyasheng/JevDeepResearch) | 实验性深度研究：GPT 决定研究方向，Jev 用 Choice 定位证据、Noul 判断是否存在，并行处理文档区域后返回原文；提供 Pi-Serini 接入、Jev-20/40/60 实验及复现命令 |
 | [**classifier.dev**](https://classifier.dev/) | — | **托管的零门槛分类 API，底座就是 Jev 1.13**（返回体里写着 `model: jev-1.13.0`）。不用注册、不用 key、不用绑卡，一条 curl 就能跑；批量一次 1,000 条，实测 20ms/条。代价是只剩分类一个原语、选项不能带描述、Jev 挂了会静默回退到 OpenRouter 上的 LLM 链（看 `modelsUsed` 字段才知道）。对比见 [体验渠道](#-体验渠道) |
 
 ---
