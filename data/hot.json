@@ -1,308 +1,312 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "repos": {
     "NandhaKishorM/laya": {
-      "stars": 26735,
+      "stars": 27731,
       "first_seen": "2026-09-24"
     },
     "browser-use/jev-ultrafast": {
-      "stars": 20824,
+      "stars": 21157,
       "first_seen": "2026-09-18"
     },
     "jaredpalmer/kev": {
-      "stars": 7423,
+      "stars": 7658,
       "first_seen": "2026-09-19"
     },
     "tamaratran/fast-jev-compaction": {
-      "stars": 7025,
+      "stars": 7139,
       "first_seen": "2026-09-18"
     },
     "jev-chat/jev-chat-jarvis": {
-      "stars": 6778,
+      "stars": 6929,
       "first_seen": "2026-09-22"
     },
     "TheoLeeCJ/SemIf-OpenJev": {
-      "stars": 4449,
+      "stars": 4516,
       "first_seen": "2026-09-24"
     },
     "jarrodwatts/jev-trader": {
-      "stars": 2602,
+      "stars": 2658,
       "first_seen": "2026-09-18"
     },
     "TianyuCodings/NanoJev": {
-      "stars": 2348,
+      "stars": 2401,
       "first_seen": "2026-09-18"
     },
     "yibie/awesome-jev": {
-      "stars": 1839,
+      "stars": 1928,
       "first_seen": "2026-09-18"
     },
+    "dzhng/jevgrep": {
+      "stars": 1438,
+      "first_seen": "2026-09-27"
+    },
     "vinnylarouge/jevlike": {
-      "stars": 1319,
+      "stars": 1331,
       "first_seen": "2026-09-18"
     },
     "awlevin/typesafe-computer-use": {
-      "stars": 1035,
+      "stars": 1070,
       "first_seen": "2026-09-18"
     },
     "kerpopule/hermes-jev-skills": {
-      "stars": 870,
+      "stars": 893,
       "first_seen": "2026-09-20"
     },
     "heyjunpenn/awesome-jev": {
-      "stars": 867,
+      "stars": 889,
       "first_seen": "2026-09-20"
     },
+    "ollaya-dev/ollaya": {
+      "stars": 882,
+      "first_seen": "2026-09-26"
+    },
     "Mapika/decider": {
-      "stars": 847,
+      "stars": 881,
       "first_seen": "2026-09-18"
     },
     "nokia-applied-research/AnyJev": {
-      "stars": 838,
+      "stars": 880,
       "first_seen": "2026-09-22"
     },
     "TypeLLM/TypeLLM": {
-      "stars": 807,
+      "stars": 843,
       "first_seen": "2026-09-23"
     },
     "githubnext/localjev": {
-      "stars": 788,
+      "stars": 794,
       "first_seen": "2026-09-20"
     },
-    "dzhng/jevgrep": {
-      "stars": 775,
-      "first_seen": "2026-09-27"
-    },
     "wfzyx/von": {
-      "stars": 729,
+      "stars": 755,
       "first_seen": "2026-09-19"
     },
+    "Rizzo-AI-Academy/rizzo-flow": {
+      "stars": 738,
+      "first_seen": "2026-09-22"
+    },
     "v-modal/awesome-jev-tools": {
-      "stars": 727,
+      "stars": 729,
       "first_seen": "2026-09-20"
     },
     "anishfn/shapeshift": {
-      "stars": 709,
+      "stars": 725,
       "first_seen": "2026-09-24"
     },
-    "ollaya-dev/ollaya": {
-      "stars": 696,
-      "first_seen": "2026-09-26"
+    "wy-coliney/jev-browser-use": {
+      "stars": 655,
+      "first_seen": "2026-09-19"
     },
-    "Rizzo-AI-Academy/rizzo-flow": {
-      "stars": 689,
+    "jev-chat/jev-chat-windows": {
+      "stars": 653,
       "first_seen": "2026-09-22"
     },
     "devagrawal09/jev-review": {
-      "stars": 626,
+      "stars": 639,
       "first_seen": "2026-09-18"
     },
-    "jev-chat/jev-chat-windows": {
-      "stars": 614,
-      "first_seen": "2026-09-22"
-    },
     "Sac-Y/Jev-cu": {
-      "stars": 606,
+      "stars": 611,
       "first_seen": "2026-09-20"
     },
-    "wy-coliney/jev-browser-use": {
+    "Alex314618-create/JevRev": {
+      "stars": 610,
+      "first_seen": "2026-09-24"
+    },
+    "logicrw/awesome-jev-projects": {
       "stars": 602,
       "first_seen": "2026-09-19"
     },
     "thruwire/foreman": {
-      "stars": 593,
-      "first_seen": "2026-09-18"
-    },
-    "logicrw/awesome-jev-projects": {
-      "stars": 589,
-      "first_seen": "2026-09-19"
-    },
-    "rmalde/minecraft-agent": {
-      "stars": 562,
-      "first_seen": "2026-09-21"
-    },
-    "taeold/djev-run": {
-      "stars": 560,
-      "first_seen": "2026-09-21"
-    },
-    "featherless-ai/simple-jev": {
-      "stars": 556,
-      "first_seen": "2026-09-19"
-    },
-    "AbdelStark/awesome-typesafe-jev": {
-      "stars": 532,
-      "first_seen": "2026-09-22"
-    },
-    "receptron/laya": {
-      "stars": 517,
-      "first_seen": "2026-09-21"
-    },
-    "wuyoscar/jev-skill": {
-      "stars": 511,
-      "first_seen": "2026-09-21"
-    },
-    "AnotiaWang/awesome-jev": {
-      "stars": 509,
+      "stars": 601,
       "first_seen": "2026-09-18"
     },
     "kydlikebtc/awesome-jev": {
-      "stars": 504,
+      "stars": 582,
       "first_seen": "2026-09-23"
     },
-    "superagents-lab/jev-search": {
-      "stars": 475,
-      "first_seen": "2026-09-18"
-    },
-    "kyotofin/tax-doc-classifier": {
-      "stars": 470,
-      "first_seen": "2026-09-19"
-    },
-    "jerryjliu/docjev": {
-      "stars": 468,
+    "rmalde/minecraft-agent": {
+      "stars": 570,
       "first_seen": "2026-09-21"
     },
-    "OmniJev/awesome-jev-gallery": {
-      "stars": 465,
+    "receptron/laya": {
+      "stars": 569,
+      "first_seen": "2026-09-21"
+    },
+    "taeold/djev-run": {
+      "stars": 567,
+      "first_seen": "2026-09-21"
+    },
+    "featherless-ai/simple-jev": {
+      "stars": 563,
+      "first_seen": "2026-09-19"
+    },
+    "AbdelStark/awesome-typesafe-jev": {
+      "stars": 539,
+      "first_seen": "2026-09-22"
+    },
+    "AnotiaWang/awesome-jev": {
+      "stars": 538,
+      "first_seen": "2026-09-18"
+    },
+    "wuyoscar/jev-skill": {
+      "stars": 534,
       "first_seen": "2026-09-21"
     },
     "razorback16/openjev": {
-      "stars": 463,
+      "stars": 506,
       "first_seen": "2026-09-19"
     },
-    "gargpratyush/jev-router": {
-      "stars": 450,
+    "superagents-lab/jev-search": {
+      "stars": 483,
       "first_seen": "2026-09-18"
     },
+    "kyotofin/tax-doc-classifier": {
+      "stars": 475,
+      "first_seen": "2026-09-19"
+    },
+    "jerryjliu/docjev": {
+      "stars": 473,
+      "first_seen": "2026-09-21"
+    },
+    "gargpratyush/jev-router": {
+      "stars": 472,
+      "first_seen": "2026-09-18"
+    },
+    "OmniJev/awesome-jev-gallery": {
+      "stars": 472,
+      "first_seen": "2026-09-21"
+    },
     "jkudish/jev-mcp": {
-      "stars": 421,
+      "stars": 447,
       "first_seen": "2026-09-18"
     },
     "cobanov/awesome-jev": {
-      "stars": 418,
+      "stars": 446,
       "first_seen": "2026-09-19"
     },
+    "Liuziyu77/Valen": {
+      "stars": 441,
+      "first_seen": "2026-09-24"
+    },
     "jev-chat/jev-chat-jarvis-mac": {
-      "stars": 418,
+      "stars": 431,
       "first_seen": "2026-09-23"
     },
     "droidrun/mobile-jev": {
-      "stars": 411,
+      "stars": 418,
       "first_seen": "2026-09-18"
     },
     "fhshaik/typesafe-mario": {
-      "stars": 408,
+      "stars": 415,
       "first_seen": "2026-09-18"
     },
-    "Alex314618-create/JevRev": {
-      "stars": 407,
-      "first_seen": "2026-09-24"
-    },
     "dabit3/jev-experiments": {
-      "stars": 392,
+      "stars": 394,
       "first_seen": "2026-09-18"
     },
     "realZachi/pg-jev": {
-      "stars": 372,
+      "stars": 376,
       "first_seen": "2026-09-18"
     },
+    "Yinsongxu/LLM2Jev": {
+      "stars": 367,
+      "first_seen": "2026-09-21"
+    },
     "moritzkremb/jev-voice-browser": {
-      "stars": 350,
+      "stars": 363,
       "first_seen": "2026-09-19"
     },
     "Zefan-Cai/Open-Jev": {
-      "stars": 348,
+      "stars": 360,
       "first_seen": "2026-09-22"
     },
-    "Yinsongxu/LLM2Jev": {
-      "stars": 346,
-      "first_seen": "2026-09-21"
-    },
-    "Liuziyu77/Valen": {
-      "stars": 341,
-      "first_seen": "2026-09-24"
-    },
-    "ekzhang/openjev-sglang": {
-      "stars": 329,
-      "first_seen": "2026-09-18"
+    "TianyuCodings/JevHarness": {
+      "stars": 354,
+      "first_seen": "2026-09-22"
     },
     "kitze/unclutter": {
-      "stars": 322,
+      "stars": 336,
+      "first_seen": "2026-09-18"
+    },
+    "ekzhang/openjev-sglang": {
+      "stars": 333,
       "first_seen": "2026-09-18"
     },
     "itsmostafa/system-one-connector": {
-      "stars": 321,
+      "stars": 331,
       "first_seen": "2026-09-26"
     },
-    "TianyuCodings/JevHarness": {
-      "stars": 315,
-      "first_seen": "2026-09-22"
-    },
     "malevrigns/agent-jev": {
-      "stars": 312,
+      "stars": 322,
       "first_seen": "2026-09-23"
-    },
-    "sutro-sh/jev-align": {
-      "stars": 297,
-      "first_seen": "2026-09-20"
     },
     "lakeday-org/perch": {
-      "stars": 295,
-      "first_seen": "2026-09-18"
-    },
-    "codejunkie99/keel": {
-      "stars": 293,
-      "first_seen": "2026-09-25"
-    },
-    "Heman10x-NGU/openJev-verdict-2.0": {
-      "stars": 290,
-      "first_seen": "2026-09-20"
-    },
-    "miuuyy/Astra-Ares": {
-      "stars": 289,
-      "first_seen": "2026-09-23"
-    },
-    "hr98w/jev-visual": {
-      "stars": 289,
-      "first_seen": "2026-09-18"
-    },
-    "jkudish/jev-browser": {
-      "stars": 286,
+      "stars": 313,
       "first_seen": "2026-09-18"
     },
     "walidboulanouar/awesome-jev-use-cases": {
-      "stars": 272,
+      "stars": 310,
       "first_seen": "2026-09-20"
     },
-    "BillionsBobby/JevRouter": {
-      "stars": 258,
-      "first_seen": "2026-09-19"
+    "codejunkie99/keel": {
+      "stars": 303,
+      "first_seen": "2026-09-25"
     },
-    "logan-markewich/jeff": {
-      "stars": 256,
+    "sutro-sh/jev-align": {
+      "stars": 300,
       "first_seen": "2026-09-20"
     },
-    "kitze/skillbox": {
-      "stars": 248,
+    "hr98w/jev-visual": {
+      "stars": 296,
+      "first_seen": "2026-09-18"
+    },
+    "miuuyy/Astra-Ares": {
+      "stars": 293,
+      "first_seen": "2026-09-23"
+    },
+    "Heman10x-NGU/openJev-verdict-2.0": {
+      "stars": 292,
+      "first_seen": "2026-09-20"
+    },
+    "jkudish/jev-browser": {
+      "stars": 289,
       "first_seen": "2026-09-18"
     },
     "Devin-AXIS/jev-dsh-decision": {
-      "stars": 247,
+      "stars": 286,
       "first_seen": "2026-09-21"
     },
-    "FerryCorleone/crush-monitor": {
-      "stars": 244,
-      "first_seen": "2026-09-21"
-    },
-    "FBddcz/embodied-jev": {
-      "stars": 239,
-      "first_seen": "2026-09-21"
-    },
-    "vinilana/jev-gateway": {
-      "stars": 238,
+    "BillionsBobby/JevRouter": {
+      "stars": 274,
       "first_seen": "2026-09-19"
     },
+    "logan-markewich/jeff": {
+      "stars": 259,
+      "first_seen": "2026-09-20"
+    },
+    "angel291592/Intent-Router": {
+      "stars": 255,
+      "first_seen": "2026-09-24"
+    },
+    "FerryCorleone/crush-monitor": {
+      "stars": 252,
+      "first_seen": "2026-09-21"
+    },
+    "kitze/skillbox": {
+      "stars": 251,
+      "first_seen": "2026-09-18"
+    },
+    "vinilana/jev-gateway": {
+      "stars": 248,
+      "first_seen": "2026-09-19"
+    },
+    "FBddcz/embodied-jev": {
+      "stars": 242,
+      "first_seen": "2026-09-21"
+    },
     "monteduro/killmyidea": {
-      "stars": 233,
+      "stars": 240,
       "first_seen": "2026-09-18"
     },
     "NiazMorshed2007/jev-review": {
@@ -310,39 +314,43 @@
       "first_seen": "2026-09-18"
     },
     "ipenywis/laya-ultrafast": {
-      "stars": 218,
+      "stars": 225,
       "first_seen": "2026-09-22"
     },
-    "mmastrac/djev-spark": {
-      "stars": 218,
-      "first_seen": "2026-09-19"
-    },
     "RomanSlack/jev-drone": {
-      "stars": 216,
+      "stars": 223,
       "first_seen": "2026-09-18"
     },
+    "mmastrac/djev-spark": {
+      "stars": 219,
+      "first_seen": "2026-09-19"
+    },
     "fatwang2/awesome-jev": {
-      "stars": 209,
+      "stars": 211,
       "first_seen": "2026-09-19"
     },
     "Amal-David/awesome-jev": {
-      "stars": 203,
+      "stars": 211,
       "first_seen": "2026-09-23"
     },
     "hellogumbo/awesome-jev": {
-      "stars": 200,
+      "stars": 207,
       "first_seen": "2026-09-18"
     },
     "standardagents/jevpilot": {
-      "stars": 193,
+      "stars": 197,
       "first_seen": "2026-09-18"
     },
     "ryana/jevify": {
-      "stars": 188,
+      "stars": 191,
       "first_seen": "2026-09-22"
     },
     "kunchenguid/compact-adviser": {
       "stars": 187,
+      "first_seen": "2026-09-19"
+    },
+    "valentynkit/awesome-jev-typesafe": {
+      "stars": 182,
       "first_seen": "2026-09-19"
     },
     "dealerdefi/Jevmind": {
@@ -350,148 +358,184 @@
       "first_seen": "2026-09-22"
     },
     "HarnessRouter/SystemOneHarness": {
-      "stars": 175,
+      "stars": 179,
       "first_seen": "2026-09-21"
     },
-    "angel291592/Intent-Router": {
-      "stars": 174,
-      "first_seen": "2026-09-24"
-    },
-    "valentynkit/awesome-jev-typesafe": {
-      "stars": 171,
-      "first_seen": "2026-09-19"
-    },
     "brainstormity/Jev-X-Sentiment-Analysis": {
-      "stars": 170,
+      "stars": 173,
       "first_seen": "2026-09-20"
     },
-    "aowang-ai/jev-trade": {
-      "stars": 159,
-      "first_seen": "2026-09-19"
+    "fstandhartinger/jevbench": {
+      "stars": 168,
+      "first_seen": "2026-09-21"
     },
-    "togethercomputer/tev1": {
-      "stars": 156,
-      "first_seen": "2026-09-25"
-    },
-    "kraayenjon/awesome-jev": {
-      "stars": 154,
-      "first_seen": "2026-09-19"
+    "imikerussell/beebots": {
+      "stars": 167,
+      "first_seen": "2026-09-27"
     },
     "AgriciDaniel/jev-seo": {
-      "stars": 153,
+      "stars": 163,
       "first_seen": "2026-09-23"
     },
-    "kshetrajna12/reflex": {
-      "stars": 153,
-      "first_seen": "2026-09-18"
+    "togethercomputer/tev1": {
+      "stars": 163,
+      "first_seen": "2026-09-25"
     },
-    "tamaratran/jev-pruner": {
-      "stars": 152,
+    "aowang-ai/jev-trade": {
+      "stars": 162,
+      "first_seen": "2026-09-19"
+    },
+    "kraayenjon/awesome-jev": {
+      "stars": 158,
       "first_seen": "2026-09-19"
     },
     "Liyucheng1997/332_lab-jev-chat": {
-      "stars": 150,
+      "stars": 156,
       "first_seen": "2026-09-23"
     },
-    "imikerussell/beebots": {
-      "stars": 149,
-      "first_seen": "2026-09-27"
-    },
-    "y0usaf/pi-jev": {
-      "stars": 149,
-      "first_seen": "2026-09-18"
-    },
-    "CTNicholas/jev-workflow-builder": {
-      "stars": 148,
-      "first_seen": "2026-09-22"
-    },
-    "fstandhartinger/jevbench": {
-      "stars": 148,
-      "first_seen": "2026-09-21"
-    },
-    "DevMortimer/pi-warden": {
-      "stars": 148,
+    "kshetrajna12/reflex": {
+      "stars": 156,
       "first_seen": "2026-09-18"
     },
     "SiliconLabAI/OpenJev": {
-      "stars": 147,
+      "stars": 153,
       "first_seen": "2026-09-21"
     },
-    "jexp/neo4jev": {
-      "stars": 147,
+    "tamaratran/jev-pruner": {
+      "stars": 153,
+      "first_seen": "2026-09-19"
+    },
+    "DevMortimer/pi-warden": {
+      "stars": 153,
       "first_seen": "2026-09-18"
+    },
+    "y0usaf/pi-jev": {
+      "stars": 151,
+      "first_seen": "2026-09-18"
+    },
+    "jexp/neo4jev": {
+      "stars": 151,
+      "first_seen": "2026-09-18"
+    },
+    "CTNicholas/jev-workflow-builder": {
+      "stars": 149,
+      "first_seen": "2026-09-22"
     },
     "dorkitude/webctl": {
       "stars": 145,
       "first_seen": "2026-09-23"
     },
-    "uehaj/jev-semgrep": {
+    "uehaj/sys1grep": {
       "stars": 145,
-      "first_seen": "2026-09-20"
+      "first_seen": "2026-09-29"
     },
     "wquguru/dasheng": {
-      "stars": 142,
+      "stars": 144,
       "first_seen": "2026-09-21"
     },
+    "shengjidaguai-china/goutoujunshi-jev-chat": {
+      "stars": 144,
+      "first_seen": "2026-09-27"
+    },
     "dbreunig/building-with-jev-skill": {
-      "stars": 141,
+      "stars": 143,
       "first_seen": "2026-09-18"
     },
+    "ThinkFlowLab/system1-agents": {
+      "stars": 135,
+      "first_seen": "2026-09-25"
+    },
     "Promethe-us/awesome-jev": {
-      "stars": 132,
+      "stars": 135,
       "first_seen": "2026-09-21"
     },
     "YUTA-fywoo/jev-gui-delegate": {
       "stars": 131,
       "first_seen": "2026-09-27"
     },
-    "ThinkFlowLab/system1-agents": {
-      "stars": 129,
-      "first_seen": "2026-09-25"
-    },
     "keltokhy/jgrep": {
-      "stars": 127,
+      "stars": 130,
       "first_seen": "2026-09-19"
     },
-    "yibie/jev-engineering-zh": {
-      "stars": 126,
-      "first_seen": "2026-09-23"
-    },
     "Futureppo/typesafe_register": {
-      "stars": 126,
+      "stars": 129,
       "first_seen": "2026-09-22"
+    },
+    "yibie/jev-engineering-zh": {
+      "stars": 127,
+      "first_seen": "2026-09-23"
     },
     "Dicklesworthstone/skillranker": {
       "stars": 123,
       "first_seen": "2026-09-18"
     },
     "allebee/jevk5": {
-      "stars": 119,
+      "stars": 121,
       "first_seen": "2026-09-24"
     },
-    "sdras/jev-webmcp-extension": {
+    "daseinlabs/open-jev": {
+      "stars": 121,
+      "first_seen": "2026-09-18"
+    },
+    "michaelswissa/jevry": {
       "stars": 119,
+      "first_seen": "2026-09-25"
+    },
+    "sdras/jev-webmcp-extension": {
+      "stars": 118,
       "first_seen": "2026-09-22"
     },
     "devagrawal09/stanley-code": {
       "stars": 117,
       "first_seen": "2026-09-20"
     },
-    "daseinlabs/open-jev": {
-      "stars": 116,
-      "first_seen": "2026-09-18"
+    "socai-io/jev-social": {
+      "stars": 115,
+      "first_seen": "2026-09-20"
     },
     "mrnugget/jev-shell-history": {
       "stars": 113,
       "first_seen": "2026-09-19"
     },
-    "michaelswissa/jevry": {
-      "stars": 109,
+    "libingzheren/Jev-Mem": {
+      "stars": 113,
+      "first_seen": "2026-09-22"
+    },
+    "aaddrick/building-with-typesafe-jev": {
+      "stars": 113,
+      "first_seen": "2026-09-28"
+    },
+    "tinnel123666888/OmniJev": {
+      "stars": 111,
       "first_seen": "2026-09-25"
     },
+    "agent-labs-dev/fastbrowse": {
+      "stars": 110,
+      "first_seen": "2026-09-21"
+    },
+    "virajbhartiya/laya-vs-jev": {
+      "stars": 110,
+      "first_seen": "2026-09-22"
+    },
     "Heman10x-NGU/Verdict-open-jev": {
-      "stars": 107,
+      "stars": 109,
       "first_seen": "2026-09-19"
+    },
+    "mmastrac/djev": {
+      "stars": 109,
+      "first_seen": "2026-09-24"
+    },
+    "mizchi/jev-lint": {
+      "stars": 109,
+      "first_seen": "2026-09-20"
+    },
+    "savka777/jev-use": {
+      "stars": 108,
+      "first_seen": "2026-09-20"
+    },
+    "NanmiCoder/jev-arena": {
+      "stars": 109,
+      "first_seen": "2026-09-21"
     },
     "trungdq88/youtube-sponsor-detection": {
       "stars": 106,
@@ -501,81 +545,53 @@
       "stars": 106,
       "first_seen": "2026-09-18"
     },
-    "NanmiCoder/jev-arena": {
-      "stars": 106,
-      "first_seen": "2026-09-21"
-    },
-    "shengjidaguai-china/goutoujunshi-jev-chat": {
-      "stars": 106,
-      "first_seen": "2026-09-27"
-    },
-    "libingzheren/Jev-Mem": {
-      "stars": 105,
+    "qkal/Canny": {
+      "stars": 104,
       "first_seen": "2026-09-22"
     },
-    "agent-labs-dev/fastbrowse": {
-      "stars": 105,
-      "first_seen": "2026-09-21"
+    "w3cj/jev-chat": {
+      "stars": 103,
+      "first_seen": "2026-09-19"
     },
-    "socai-io/jev-social": {
+    "kevinbadi/jev-voice": {
       "stars": 103,
       "first_seen": "2026-09-20"
     },
-    "savka777/jev-use": {
+    "JunMa11/MedJev": {
       "stars": 103,
-      "first_seen": "2026-09-20"
+      "first_seen": "2026-09-23"
     },
     "openqa-cn/jev-browser": {
       "stars": 103,
       "first_seen": "2026-09-24"
     },
-    "virajbhartiya/laya-vs-jev": {
+    "egma-ai/jev-code-reviewer": {
       "stars": 102,
-      "first_seen": "2026-09-22"
-    },
-    "kevinbadi/jev-voice": {
-      "stars": 101,
-      "first_seen": "2026-09-20"
-    },
-    "w3cj/jev-chat": {
-      "stars": 100,
-      "first_seen": "2026-09-19"
+      "first_seen": "2026-09-26"
     },
     "ChetasLua/jevmeter": {
-      "stars": 100,
+      "stars": 101,
       "first_seen": "2026-09-18"
     },
-    "qkal/Canny": {
+    "christianmat/jev-pokemon": {
       "stars": 99,
-      "first_seen": "2026-09-22"
+      "first_seen": "2026-09-26"
     },
-    "JunMa11/MedJev": {
-      "stars": 98,
-      "first_seen": "2026-09-23"
+    "GhalebDweikat/winnow": {
+      "stars": 99,
+      "first_seen": "2026-09-18"
     },
     "can1357/jegrep": {
-      "stars": 97,
+      "stars": 98,
       "first_seen": "2026-09-20"
     },
     "openlayer-ai/jevals": {
       "stars": 97,
       "first_seen": "2026-09-22"
     },
-    "tinnel123666888/OmniJev": {
-      "stars": 97,
-      "first_seen": "2026-09-25"
-    },
-    "GhalebDweikat/winnow": {
-      "stars": 95,
-      "first_seen": "2026-09-18"
-    },
     "pithings/advocaat": {
-      "stars": 95,
+      "stars": 97,
       "first_seen": "2026-09-18"
-    },
-    "mmastrac/djev": {
-      "stars": 94,
-      "first_seen": "2026-09-24"
     },
     "arimanyus/warrenduffer": {
       "stars": 93,
@@ -585,19 +601,31 @@
       "stars": 93,
       "first_seen": "2026-09-20"
     },
+    "kyle-pena-nlp/jevchat": {
+      "stars": 93,
+      "first_seen": "2026-09-21"
+    },
     "Avinash-jetwani/jevmem": {
       "stars": 92,
       "first_seen": "2026-09-26"
     },
-    "kyle-pena-nlp/jevchat": {
-      "stars": 91,
-      "first_seen": "2026-09-21"
+    "nidhi-singh02/agent-router": {
+      "stars": 92,
+      "first_seen": "2026-09-18"
     },
     "Ying-Kai-Liao/jev-browser": {
+      "stars": 91,
+      "first_seen": "2026-09-18"
+    },
+    "AkashPriyadarshii/jev-curate": {
+      "stars": 90,
+      "first_seen": "2026-09-19"
+    },
+    "ellipsis-dev/blink": {
       "stars": 90,
       "first_seen": "2026-09-18"
     },
-    "egma-ai/jev-code-reviewer": {
+    "artemnovitckii/creator-lab": {
       "stars": 89,
       "first_seen": "2026-09-26"
     },
@@ -605,31 +633,19 @@
       "stars": 88,
       "first_seen": "2026-09-20"
     },
-    "mizchi/jev-lint": {
+    "nassim-arifette/jevgrep": {
       "stars": 88,
-      "first_seen": "2026-09-20"
-    },
-    "AkashPriyadarshii/jev-curate": {
-      "stars": 87,
-      "first_seen": "2026-09-19"
+      "first_seen": "2026-09-21"
     },
     "Bodila51/grok-bot-jev": {
       "stars": 87,
       "first_seen": "2026-09-20"
     },
-    "ellipsis-dev/blink": {
+    "fazlerocks/jevmail": {
       "stars": 87,
-      "first_seen": "2026-09-18"
+      "first_seen": "2026-09-20"
     },
-    "christianmat/jev-pokemon": {
-      "stars": 87,
-      "first_seen": "2026-09-26"
-    },
-    "aaddrick/building-with-typesafe-jev": {
-      "stars": 87,
-      "first_seen": "2026-09-28"
-    },
-    "nidhi-singh02/agent-router": {
+    "realZachi/typesafe-adblock": {
       "stars": 87,
       "first_seen": "2026-09-18"
     },
@@ -637,157 +653,161 @@
       "stars": 87,
       "first_seen": "2026-09-19"
     },
-    "fazlerocks/jevmail": {
-      "stars": 86,
-      "first_seen": "2026-09-20"
-    },
     "f/jev-leftpad": {
       "stars": 85,
       "first_seen": "2026-09-22"
     },
-    "realZachi/typesafe-adblock": {
-      "stars": 85,
-      "first_seen": "2026-09-18"
-    },
-    "nassim-arifette/jevgrep": {
-      "stars": 84,
-      "first_seen": "2026-09-21"
-    },
-    "artemnovitckii/creator-lab": {
-      "stars": 82,
-      "first_seen": "2026-09-26"
-    },
     "AkashPriyadarshii/jev-seo": {
-      "stars": 80,
-      "first_seen": "2026-09-19"
-    },
-    "AustinAWay/Working-Memory-Jev": {
-      "stars": 76,
-      "first_seen": "2026-09-23"
-    },
-    "1Panel-dev/laya-server": {
-      "stars": 76,
-      "first_seen": "2026-09-24"
-    },
-    "IAmUnbounded/save-token-jev-clean": {
-      "stars": 75,
+      "stars": 83,
       "first_seen": "2026-09-19"
     },
     "UditAkhourii/quicksilver": {
-      "stars": 73,
+      "stars": 83,
       "first_seen": "2026-09-26"
     },
-    "hyperspaceai/jevcache": {
-      "stars": 73,
-      "first_seen": "2026-09-20"
+    "zwliJay/jev-forge": {
+      "stars": 82,
+      "first_seen": "2026-09-29"
+    },
+    "denis-pplx/autojev": {
+      "stars": 81,
+      "first_seen": "2026-09-25"
     },
     "Hiwoniu/Jev-Case": {
-      "stars": 73,
+      "stars": 78,
       "first_seen": "2026-09-23"
+    },
+    "1Panel-dev/laya-server": {
+      "stars": 77,
+      "first_seen": "2026-09-24"
+    },
+    "AustinAWay/Working-Memory-Jev": {
+      "stars": 77,
+      "first_seen": "2026-09-23"
+    },
+    "IAmUnbounded/save-token-jev-clean": {
+      "stars": 76,
+      "first_seen": "2026-09-19"
+    },
+    "hyperspaceai/jevcache": {
+      "stars": 74,
+      "first_seen": "2026-09-20"
+    },
+    "Dimweaker/jev-libero": {
+      "stars": 73,
+      "first_seen": "2026-09-21"
+    },
+    "sharziki/semdecide": {
+      "stars": 72,
+      "first_seen": "2026-09-22"
     },
     "yikangy873-gif/jev-desktop": {
       "stars": 72,
       "first_seen": "2026-09-20"
     },
+    "kikoncuo/jevfire": {
+      "stars": 72,
+      "first_seen": "2026-09-23"
+    },
     "mizchi/jev-playground": {
       "stars": 71,
       "first_seen": "2026-09-18"
     },
-    "kikoncuo/jevfire": {
-      "stars": 70,
-      "first_seen": "2026-09-23"
-    },
-    "sharziki/semdecide": {
-      "stars": 68,
-      "first_seen": "2026-09-22"
-    },
-    "bnsd55/jevmlx": {
-      "stars": 68,
+    "AboveColin/HA-Jev": {
+      "stars": 69,
       "first_seen": "2026-09-18"
     },
-    "Dimweaker/jev-libero": {
-      "stars": 67,
-      "first_seen": "2026-09-21"
+    "bnsd55/jevmlx": {
+      "stars": 69,
+      "first_seen": "2026-09-18"
+    },
+    "mohit67890/imajev": {
+      "stars": 69,
+      "first_seen": "2026-09-29"
     },
     "chigwell/typesafe.pro": {
       "stars": 67,
       "first_seen": "2026-09-22"
     },
-    "AboveColin/HA-Jev": {
+    "iamaamir/system-one": {
       "stars": 65,
-      "first_seen": "2026-09-18"
-    },
-    "denis-pplx/autojev": {
-      "stars": 64,
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-23"
     },
     "wobsoriano/oxlint-plugin-jev": {
-      "stars": 64,
+      "stars": 65,
       "first_seen": "2026-09-20"
+    },
+    "RJMSWD/QwenJev": {
+      "stars": 65,
+      "first_seen": "2026-09-29"
+    },
+    "iapp-technology/openthai-systemone": {
+      "stars": 64,
+      "first_seen": "2026-09-21"
+    },
+    "mizorewww/laya-mlx": {
+      "stars": 6577,
+      "first_seen": "2026-09-21"
+    },
+    "mode-io/vllm-jev": {
+      "stars": 76,
+      "first_seen": "2026-09-26"
+    },
+    "PerryLink/jevcore": {
+      "stars": 64,
+      "first_seen": "2026-09-22"
     },
     "BeatAPI/awesome-jev": {
       "stars": 63,
       "first_seen": "2026-09-21"
     },
-    "iapp-technology/openthai-systemone": {
-      "stars": 63,
-      "first_seen": "2026-09-21"
-    },
-    "iamaamir/system-one": {
-      "stars": 63,
-      "first_seen": "2026-09-23"
-    },
-    "achimala/jev-paint": {
-      "stars": 60,
+    "wh000wh000/awesome-jev-live": {
+      "stars": 61,
       "first_seen": "2026-09-20"
-    },
-    "RenaGao/jev-dataops": {
-      "stars": 60,
-      "first_seen": "2026-09-22"
-    },
-    "burnigtm/jev-mcp": {
-      "stars": 59,
-      "first_seen": "2026-09-20"
-    },
-    "mizorewww/laya-mlx": {
-      "stars": 6488,
-      "first_seen": "2026-09-21"
-    },
-    "mode-io/vllm-jev": {
-      "stars": 57,
-      "first_seen": "2026-09-26"
     },
     "TheoOliveira/pi-jev": {
-      "stars": 56,
+      "stars": 57,
       "first_seen": "2026-09-19"
     },
     "ikermoel/open-alternative-jev": {
-      "stars": 56,
+      "stars": 57,
       "first_seen": "2026-09-19"
     },
-    "wh000wh000/awesome-jev-live": {
-      "stars": 51,
-      "first_seen": "2026-09-20"
+    "cobusgreyling/Jev": {
+      "stars": 55,
+      "first_seen": "2026-09-29"
     },
     "visitworld123/Awesome-Robot-Use-Agent": {
-      "stars": 51,
+      "stars": 53,
       "first_seen": "2026-09-23"
     },
+    "kyu1204/jgrep": {
+      "stars": 52,
+      "first_seen": "2026-09-20"
+    },
+    "disler/ten-levels-of-jev": {
+      "stars": 52,
+      "first_seen": "2026-09-29"
+    },
     "peterfriese/jev-foundation-models": {
-      "stars": 49,
+      "stars": 50,
       "first_seen": "2026-09-22"
     },
-    "PerryLink/jevcore": {
-      "stars": 49,
-      "first_seen": "2026-09-22"
+    "HITsz-TMG/JevEmbed": {
+      "stars": 50,
+      "first_seen": "2026-09-25"
     },
     "alvarobartt/sys1": {
-      "stars": 48,
+      "stars": 49,
       "first_seen": "2026-09-24"
     },
     "brainstormity/Jev-Moderation-Bot": {
       "stars": 48,
       "first_seen": "2026-09-18"
+    },
+    "jonathanavis96/jev-kit": {
+      "stars": 47,
+      "first_seen": "2026-09-25"
     },
     "snellingio/system-one": {
       "stars": 46,
@@ -797,47 +817,55 @@
       "stars": 45,
       "first_seen": "2026-09-23"
     },
-    "kyu1204/jgrep": {
-      "stars": 45,
-      "first_seen": "2026-09-20"
-    },
     "intikhab49/open-jev-typed-decision-engine": {
-      "stars": 44,
+      "stars": 45,
       "first_seen": "2026-09-21"
     },
     "YuanKJing/Jev-as-Policy": {
+      "stars": 45,
+      "first_seen": "2026-09-22"
+    },
+    "kyegomez/open-jev": {
       "stars": 44,
       "first_seen": "2026-09-22"
     },
     "tacticocc/Jevbridge": {
+      "stars": 44,
+      "first_seen": "2026-09-19"
+    },
+    "leepokai/jev-guard": {
       "stars": 43,
       "first_seen": "2026-09-19"
     },
-    "jonathanavis96/jev-kit": {
+    "bodepudimuneendra-netizen/laya-jev-GraphRAG": {
       "stars": 43,
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-24"
     },
-    "kyegomez/open-jev": {
+    "ruyianry/JevGym": {
+      "stars": 42,
+      "first_seen": "2026-09-27"
+    },
+    "OmniJev/PlayJev": {
+      "stars": 41,
+      "first_seen": "2026-09-21"
+    },
+    "Mushroom-Systems/lichen": {
       "stars": 40,
-      "first_seen": "2026-09-22"
+      "first_seen": "2026-09-27"
     },
     "NevaMind-AI/JevTown": {
       "stars": 40,
       "first_seen": "2026-09-25"
     },
-    "OmniJev/PlayJev": {
-      "stars": 40,
-      "first_seen": "2026-09-21"
-    },
-    "bodepudimuneendra-netizen/laya-jev-GraphRAG": {
-      "stars": 40,
-      "first_seen": "2026-09-24"
-    },
-    "Mushroom-Systems/lichen": {
+    "Abhinavexists/lev": {
       "stars": 39,
-      "first_seen": "2026-09-27"
+      "first_seen": "2026-09-28"
     },
     "spring-ai-community/spring-ai-typesafe": {
+      "stars": 39,
+      "first_seen": "2026-09-22"
+    },
+    "nico-martin/open-jev": {
       "stars": 39,
       "first_seen": "2026-09-22"
     },
@@ -845,13 +873,21 @@
       "stars": 38,
       "first_seen": "2026-09-21"
     },
+    "MiaoWuNYA/rikkahub-sillytavern-android": {
+      "stars": 38,
+      "first_seen": "2026-09-23"
+    },
+    "hqman/jev-browser-skill": {
+      "stars": 38,
+      "first_seen": "2026-09-23"
+    },
     "mithalouni/system-one-open": {
       "stars": 37,
       "first_seen": "2026-09-18"
     },
-    "nico-martin/open-jev": {
+    "safzanpirani/pi-jev-skill-picker": {
       "stars": 37,
-      "first_seen": "2026-09-22"
+      "first_seen": "2026-09-21"
     },
     "klauswg/jev-guard": {
       "stars": 37,
@@ -861,51 +897,55 @@
       "stars": 37,
       "first_seen": "2026-09-24"
     },
-    "safzanpirani/pi-jev-skill-picker": {
+    "altryne/jevify": {
       "stars": 36,
-      "first_seen": "2026-09-21"
-    },
-    "MiaoWuNYA/rikkahub-sillytavern-android": {
-      "stars": 36,
-      "first_seen": "2026-09-23"
-    },
-    "hqman/jev-browser-skill": {
-      "stars": 36,
-      "first_seen": "2026-09-23"
-    },
-    "HITsz-TMG/JevEmbed": {
-      "stars": 36,
-      "first_seen": "2026-09-25"
+      "first_seen": "2026-09-20"
     },
     "sgoedecke/system-one": {
       "stars": 35,
       "first_seen": "2026-09-19"
     },
+    "zadescoxp/Jev-Trades": {
+      "stars": 35,
+      "first_seen": "2026-09-18"
+    },
     "TypeLLM/pijev": {
       "stars": 35,
       "first_seen": "2026-09-23"
     },
-    "altryne/jevify": {
+    "jlowin/vibecheck": {
       "stars": 35,
-      "first_seen": "2026-09-20"
+      "first_seen": "2026-09-25"
     },
     "choxos/jev-reviewer": {
       "stars": 35,
       "first_seen": "2026-09-20"
     },
-    "zadescoxp/Jev-Trades": {
-      "stars": 34,
-      "first_seen": "2026-09-18"
-    },
     "bytelabs-oss/clash-jev": {
-      "stars": 33,
+      "stars": 34,
       "first_seen": "2026-09-23"
+    },
+    "Jwuthri/SelfJev": {
+      "stars": 34,
+      "first_seen": "2026-09-29"
+    },
+    "klauswg/jev-suite": {
+      "stars": 34,
+      "first_seen": "2026-09-24"
+    },
+    "buberlo/jev-trader": {
+      "stars": 33,
+      "first_seen": "2026-09-25"
+    },
+    "karminski/Jev-Quantum": {
+      "stars": 33,
+      "first_seen": "2026-09-22"
     },
     "davila7/jev-explained": {
       "stars": 33,
       "first_seen": "2026-09-21"
     },
-    "klauswg/jev-suite": {
+    "bladedevoff/stuntd": {
       "stars": 33,
       "first_seen": "2026-09-24"
     },
@@ -913,73 +953,53 @@
       "stars": 33,
       "first_seen": "2026-09-22"
     },
-    "jlowin/vibecheck": {
-      "stars": 33,
-      "first_seen": "2026-09-25"
-    },
-    "karminski/Jev-Quantum": {
-      "stars": 32,
-      "first_seen": "2026-09-22"
-    },
-    "ruyianry/JevGym": {
-      "stars": 32,
-      "first_seen": "2026-09-27"
-    },
-    "buberlo/jev-trader": {
-      "stars": 31,
-      "first_seen": "2026-09-25"
-    },
     "AkashPriyadarshii/jev-superpowers": {
-      "stars": 31,
+      "stars": 32,
       "first_seen": "2026-09-21"
     },
     "everyinfra/jev-radar": {
       "stars": 31,
       "first_seen": "2026-09-21"
     },
-    "bladedevoff/stuntd": {
+    "lukstei/slop-grader": {
       "stars": 31,
-      "first_seen": "2026-09-24"
+      "first_seen": "2026-09-22"
+    },
+    "keeltrace/hermes-nerve": {
+      "stars": 30,
+      "first_seen": "2026-09-23"
     },
     "MoLeMo-Lab/mojev": {
       "stars": 30,
       "first_seen": "2026-09-24"
     },
-    "lukstei/slop-grader": {
+    "GoldenLoaf24h/browserpaw": {
       "stars": 30,
-      "first_seen": "2026-09-22"
+      "first_seen": "2026-09-29"
     },
     "PsiACE/dohnuts": {
       "stars": 29,
       "first_seen": "2026-09-22"
     },
-    "keeltrace/hermes-nerve": {
-      "stars": 29,
-      "first_seen": "2026-09-23"
-    },
     "mizchi/jev-test-filter": {
       "stars": 29,
       "first_seen": "2026-09-22"
     },
-    "Abhinavexists/lev": {
+    "FrancoisChastel/jev-code": {
       "stars": 28,
-      "first_seen": "2026-09-28"
+      "first_seen": "2026-09-23"
     },
     "jomatsu/pi-jev-auto-mode": {
       "stars": 28,
       "first_seen": "2026-09-18"
     },
-    "FrancoisChastel/jev-code": {
-      "stars": 27,
-      "first_seen": "2026-09-23"
+    "tomascupr/reelql": {
+      "stars": 28,
+      "first_seen": "2026-09-27"
     },
     "phyous/tsai-sc": {
       "stars": 27,
       "first_seen": "2026-09-18"
-    },
-    "tomascupr/reelql": {
-      "stars": 27,
-      "first_seen": "2026-09-27"
     },
     "Zaious/jev-capability-atlas": {
       "stars": 27,
@@ -997,6 +1017,10 @@
       "stars": 25,
       "first_seen": "2026-09-21"
     },
+    "mizzlelover/jev-hub": {
+      "stars": 25,
+      "first_seen": "2026-09-20"
+    },
     "rorshopping/jev-on-a-laptop": {
       "stars": 25,
       "first_seen": "2026-09-18"
@@ -1005,13 +1029,21 @@
       "stars": 25,
       "first_seen": "2026-09-20"
     },
-    "mizzlelover/jev-hub": {
-      "stars": 24,
-      "first_seen": "2026-09-20"
-    },
     "sorrycc/typesafe-snake": {
       "stars": 23,
       "first_seen": "2026-09-18"
+    },
+    "Eliot5566/JEV-Paper-Radar": {
+      "stars": 23,
+      "first_seen": "2026-09-27"
+    },
+    "aliaihub/awesome-jev-usecases": {
+      "stars": 22,
+      "first_seen": "2026-09-20"
+    },
+    "ilyamk/jev-gmail-ai-spam-filter-and-labeling": {
+      "stars": 22,
+      "first_seen": "2026-09-21"
     },
     "Brainwires/jevwire": {
       "stars": 22,
@@ -1024,10 +1056,6 @@
     "vinilana/live-jev": {
       "stars": 21,
       "first_seen": "2026-09-18"
-    },
-    "ilyamk/jev-gmail-ai-spam-filter-and-labeling": {
-      "stars": 21,
-      "first_seen": "2026-09-21"
     },
     "oso95/x-scanner": {
       "stars": 21,
@@ -1045,10 +1073,6 @@
       "stars": 21,
       "first_seen": "2026-09-26"
     },
-    "aliaihub/awesome-jev-usecases": {
-      "stars": 20,
-      "first_seen": "2026-09-20"
-    },
     "unicodeveloper/jevocks": {
       "stars": 20,
       "first_seen": "2026-09-19"
@@ -1065,13 +1089,13 @@
       "stars": 20,
       "first_seen": "2026-09-21"
     },
-    "Eliot5566/JEV-Paper-Radar": {
-      "stars": 20,
-      "first_seen": "2026-09-27"
-    },
     "anandi1989/awesome-jev-usecases": {
       "stars": 19,
       "first_seen": "2026-09-19"
+    },
+    "tanxarx/awesome-jev": {
+      "stars": 19,
+      "first_seen": "2026-09-22"
     },
     "runta-dev/jot": {
       "stars": 19,
@@ -1085,41 +1109,25 @@
       "stars": 19,
       "first_seen": "2026-09-21"
     },
-    "0x7067/claude-jev": {
-      "stars": 19,
-      "first_seen": "2026-09-24"
-    },
-    "kieranklaassen/ruby_llm-typesafe": {
-      "stars": 19,
-      "first_seen": "2026-09-18"
-    },
-    "tanxarx/awesome-jev": {
-      "stars": 18,
-      "first_seen": "2026-09-22"
-    },
-    "zhulinchng/jevper": {
-      "stars": 18,
-      "first_seen": "2026-09-24"
-    },
-    "AgriciDaniel/gatekeeper": {
-      "stars": 18,
-      "first_seen": "2026-09-28"
-    },
-    "andududu/jeview": {
-      "stars": 59,
-      "first_seen": "2026-09-22"
-    },
-    "Nisaka520/JevIntent": {
-      "stars": 59,
-      "first_seen": "2026-09-24"
-    },
     "EliaAlberti/jev-rules": {
-      "stars": 58,
+      "stars": 62,
       "first_seen": "2026-09-19"
     },
-    "bilune/jev-design": {
-      "stars": 55,
+    "Nisaka520/JevIntent": {
+      "stars": 62,
+      "first_seen": "2026-09-24"
+    },
+    "andududu/jeview": {
+      "stars": 61,
       "first_seen": "2026-09-22"
+    },
+    "bilune/jev-design": {
+      "stars": 56,
+      "first_seen": "2026-09-22"
+    },
+    "skeptrunedev/jev-recruiter": {
+      "stars": 52,
+      "first_seen": "2026-09-20"
     },
     "obie/ruby_decision_model": {
       "stars": 52,
@@ -1129,65 +1137,65 @@
       "stars": 51,
       "first_seen": "2026-09-19"
     },
-    "skeptrunedev/jev-recruiter": {
+    "openroboto-ai/jev-robot-control": {
       "stars": 50,
-      "first_seen": "2026-09-20"
+      "first_seen": "2026-09-21"
+    },
+    "DevMortimer/pi-typesafe": {
+      "stars": 49,
+      "first_seen": "2026-09-18"
+    },
+    "RafalWilinski/vibecheck": {
+      "stars": 49,
+      "first_seen": "2026-09-19"
     },
     "lykycy123/RoboJEV": {
       "stars": 49,
       "first_seen": "2026-09-21"
     },
-    "openroboto-ai/jev-robot-control": {
+    "kieranklaassen/truffler": {
       "stars": 49,
-      "first_seen": "2026-09-21"
-    },
-    "DevMortimer/pi-typesafe": {
-      "stars": 48,
-      "first_seen": "2026-09-18"
-    },
-    "RafalWilinski/vibecheck": {
-      "stars": 48,
-      "first_seen": "2026-09-19"
+      "first_seen": "2026-09-27"
     },
     "kbhuw/jev-sift": {
       "stars": 48,
       "first_seen": "2026-09-19"
     },
     "zhengxuyu/litjev": {
-      "stars": 45,
-      "first_seen": "2026-09-19"
-    },
-    "kieranklaassen/truffler": {
-      "stars": 44,
-      "first_seen": "2026-09-27"
-    },
-    "leepokai/jev-guard": {
-      "stars": 43,
+      "stars": 46,
       "first_seen": "2026-09-19"
     },
     "okinaaudio/live-jev": {
       "stars": 43,
       "first_seen": "2026-09-20"
     },
-    "shantanugoel/ask-jev-skill": {
-      "stars": 41,
-      "first_seen": "2026-09-18"
-    },
     "JoshuaSP/open-jev": {
-      "stars": 41,
+      "stars": 42,
       "first_seen": "2026-09-18"
     },
     "emrickgarrett/OneVOneJev": {
-      "stars": 40,
+      "stars": 41,
       "first_seen": "2026-09-22"
+    },
+    "shantanugoel/ask-jev-skill": {
+      "stars": 41,
+      "first_seen": "2026-09-18"
     },
     "iammrduncan/typesafe-ai-benchmark": {
       "stars": 40,
       "first_seen": "2026-09-18"
     },
     "danvega/jev-spring-boot-starter": {
-      "stars": 39,
+      "stars": 40,
       "first_seen": "2026-09-22"
+    },
+    "mattn/go-jev": {
+      "stars": 40,
+      "first_seen": "2026-09-28"
+    },
+    "henryklunaris/hey-jev": {
+      "stars": 39,
+      "first_seen": "2026-09-28"
     },
     "frankda/jev-poly-crypto-demo": {
       "stars": 39,
@@ -1201,44 +1209,32 @@
       "stars": 38,
       "first_seen": "2026-09-24"
     },
+    "datawhalechina/jev-cookbook": {
+      "stars": 38,
+      "first_seen": "2026-09-29"
+    },
     "samdotmak/jev-recall": {
       "stars": 38,
       "first_seen": "2026-09-21"
     },
-    "mattn/go-jev": {
+    "FeiLiuEM/open-medical-jev": {
       "stars": 38,
-      "first_seen": "2026-09-28"
-    },
-    "henryklunaris/hey-jev": {
-      "stars": 35,
-      "first_seen": "2026-09-28"
-    },
-    "dannote/jev": {
-      "stars": 34,
-      "first_seen": "2026-09-18"
-    },
-    "JackZeng/Jev_apps": {
-      "stars": 34,
-      "first_seen": "2026-09-19"
-    },
-    "wobsoriano/is-jeven": {
-      "stars": 33,
-      "first_seen": "2026-09-23"
+      "first_seen": "2026-09-29"
     },
     "typesafe-ai/skills": {
-      "stars": 2287,
+      "stars": 2373,
       "first_seen": "2026-09-18"
     },
     "typesafe-ai/system-one-adapter-python": {
-      "stars": 313,
+      "stars": 336,
       "first_seen": "2026-09-18"
     },
     "typesafe-ai/typesafe-sdk-js": {
-      "stars": 248,
+      "stars": 254,
       "first_seen": "2026-09-18"
     },
     "typesafe-ai/typesafe-sdk-python": {
-      "stars": 238,
+      "stars": 247,
       "first_seen": "2026-09-18"
     },
     "typesafe-ai/daggerverse": {
