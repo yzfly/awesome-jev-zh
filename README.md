@@ -603,6 +603,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**AboveColin/HA-Jev**](https://github.com/AboveColin/HA-Jev) | ![](https://badgen.net/github/stars/AboveColin/HA-Jev) | Home Assistant 集成：把「关于家里状态的类型化提问」变成传感器与自动化动作，带每日 token 预算实体 |
 | [**ellipsis-dev/blink**](https://github.com/ellipsis-dev/blink) | ![](https://badgen.net/github/stars/ellipsis-dev/blink) | 代码库语义搜索，Jev 驱动。不用向量库 |
 | [**devanshbatham/commit-miner**](https://github.com/devanshbatham/commit-miner) | ![](https://badgen.net/github/stars/devanshbatham/commit-miner) | Rust CLI，给 commit diff 分类：修 bug、安全/CWE、变更类型，出 HTML/CSV 报告 |
+| [**kyu1204/jgrep**](https://github.com/kyu1204/jgrep) | ![](https://badgen.net/github/stars/kyu1204/jgrep) | 按「代码在做什么」来 grep 的 CLI：给每个代码块 / diff hunk / CSV 行问一个 Noul「它符合这句描述吗」，16 个块打包成一次请求，结果按 file:line 带概率输出。`--diff` 可拿一句英文规则当 CI 门禁（退出码 0 命中 / 1 干净 / 2 出错），`--tests` 列出一次改动可能波及的测试文件。作者实测自身 src/ 238 个块 1.0 秒、$0.003（2026-09-23） |
 | [**TarunTomar122/jev-askable-arm**](https://github.com/TarunTomar122/jev-askable-arm) | ![](https://badgen.net/github/stars/TarunTomar122/jev-askable-arm) | 仿真 Franka 机械臂：英文目标 zero-shot，Jev 把硬编码原语串起来 |
 | [**reachjalil/jevlogs**](https://github.com/reachjalil/jevlogs) | ![](https://badgen.net/github/stars/reachjalil/jevlogs) | OpenTelemetry 日志分流：先让 Jev 打诊断价值和优先级，再决定要不要花钱叫 LLM |
 | [**sufianetaouil/every**](https://github.com/sufianetaouil/every) | ![](https://badgen.net/github/stars/sufianetaouil/every) | 语义代码搜索 CLI：对每个函数问一个是非题，按 Noul 概率排序 |
