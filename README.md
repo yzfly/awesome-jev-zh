@@ -630,6 +630,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**mizchi/jev-gomoku**](https://github.com/mizchi/jev-gomoku) | ![](https://badgen.net/github/stars/mizchi/jev-gomoku) | MoonBit 客户端 + 两个 Jev 互相下五子棋，[配套文章](https://zenn.dev/mizchi/articles/jev-plays-gomoku)带耗时日志 |
 | [**joshlarsen/jev-t-rex-runner**](https://github.com/joshlarsen/jev-t-rex-runner) | ![](https://badgen.net/github/stars/joshlarsen/jev-t-rex-runner) | Chrome 小恐龙由 Jev 来跳 |
 | [**siroccomask/snake-jev**](https://github.com/siroccomask/snake-jev) | ![](https://badgen.net/github/stars/siroccomask/snake-jev) | 贪吃蛇，每局几百次类型化转向决策 |
+| [**cwdx/1-million-emojis**](https://github.com/cwdx/1-million-emojis) | ![](https://badgen.net/github/stars/cwdx/1-million-emojis) | 人和 Jev 一起画的 1,000 × 1,000 共享 emoji 画布（[在线](https://chriswijnia.com/lab/emoji)，免注册）：每画一笔，Jev 用一次请求在笔画旁按位置命名的候选 emoji 里做 Choice，再用 Noul 判断这一笔是不是没画完的形状；超过 0.7 就由代码补完形状，否则按概率抽样。多人实时同步 |
 | [Jev Tetris](https://jev-omega.vercel.app) | 🔗 在线 | Jev 按空洞、堆高、起伏选旋转和落点列 |
 | [Jev Pac-Man](https://jev-pacman.ephraimduncan.com) | 🔗 在线 | 迷宫做成 JSON，每个路口由 Jev 选转向 |
 | [Yes / No](https://yesno.coderai.dev) | 🔗 在线 | 免登录 Noul demo，问一句得到 yes/no/maybe |
