@@ -815,6 +815,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [Jev: The Language Model That Won't Talk](https://anthonymaio.substack.com/p/jev-the-language-model-that-wont) | Substack 长文评论 |
 | [Is the 200x Faster Decision Model Too Good to Be True?](https://flowtivity.ai/blog/jev-typesafe-ai-decision-model/) | 质疑向，和上面那篇对着读 |
 | [Generating game levels in real time with Jev](https://www.spritefusion.com/blog/generating-game-level-in-real-time-with-jev) | Sprite Fusion 的实战记录：跑酷地形实时生成，Jev 只选宽度、间隔、高度和地块类型，摆放交给游戏代码 |
+| [How to use Jev: first call in 5 minutes](https://madewithjev.com/how-to-use-jev) | 逐行拆解第一次调用：state、问题、带类型的答案，以及怎样按置信度分支；后面附 SDK、网关和 58 个视频教程（英文） |
 
 ### 日文
 
