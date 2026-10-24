@@ -732,6 +732,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**isHeSatoshi/smalljev**](https://github.com/isHeSatoshi/smalljev) | ![](https://badgen.net/github/stars/isHeSatoshi/smalljev) | MiniCPM5-2B-Base + LoRA 与原生决策头，Apache-2.0，主打「在你妈的手机上也能跑」。作者主动披露：训练配方对着 JevBench 的公开题型与来源族做过 hill-climbing，读它的自测分时要记得这点 |
 | [**OmniJev/OneJev**](https://github.com/OmniJev/OneJev) | ![](https://badgen.net/github/stars/OmniJev/OneJev) | 开源多模态 System One 模型，0.8B 到 27B 四个尺寸：截图、照片、视频和文本都能问，一次前向给出每个选项的校准概率 |
 | [**Xiaooolong/vev**](https://github.com/Xiaooolong/vev) | ![](https://badgen.net/github/stars/Xiaooolong/vev) | 支持视觉输入的 Jev 开源实现，基于 Qwen3.5 4B / 9B 微调。支持将截图、照片直接作为 state 输入，结合文本与图像进行决策；兼容 `/v1/systemone` 接口，提供代码与模型权重。权重仅限非商用。 |
+| [**OmniJev/Flide**](https://github.com/OmniJev/Flide) | ![](https://badgen.net/github/stars/OmniJev/Flide) | 开源的决策模型推理引擎，一个状态的所有问题在一次前向里算完，每个答案都和单独提问一致；支持 OneJev、Qwen3.5 和 Gemma 4，接口是 `/v1/systemone` |
 
 ### 独立评测
 
