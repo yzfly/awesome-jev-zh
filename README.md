@@ -23,7 +23,7 @@
 
 ## 目录
 
-**入门** — [官方资源](#-官方资源) · [优质项目](#-优质项目) · [Jev 是什么](#-jev-是什么) · [体验渠道](#-体验渠道) · [上手](#-上手) · [规格与定价](#-规格与定价) · [该用与不该用](#-该用与不该用) · [中文指南](#-中文指南)
+**入门** — [官方资源](#-官方资源) · [优质项目](#-优质项目) · [Jev 是什么](#-jev-是什么) · [体验渠道](#-体验渠道) · [上手](#-上手) · [规格与定价](#-规格与定价) · [该用与不该用](#-该用与不该用) · [大厂同类模型](#-大厂同类模型) · [中文指南](#-中文指南)
 
 **项目** — [热门自动榜](#-热门项目自动榜) · [SDK](#-sdk-与客户端) · [应用](#-应用) · [Demo](#-demo) · [Agent 工具](#-agent-工具) · [复现与评测](#-复现与评测)
 
@@ -190,7 +190,7 @@ TypeSafe 管这类模型叫 System One，取自卡尼曼的「系统一」，快
 | [TypeSafe 官方 API](https://console.typesafe.ai/settings/keys) | **要** | 看配额 | `jev-latest` / `jev-1.13.0` | 官方称 70–500ms | 功能最全、延迟最低，但得等 |
 | [官方 Playground](https://console.typesafe.ai/playground) | 看账号 | — | — | — | 不写代码，粘一段 state 点几下 |
 | [官方 adapter](https://github.com/typesafe-ai/system-one-adapter-python) | 不用 | 用你自己的 LLM key | — | 取决于后端 | 先把代码写完，后端暂时挂普通 LLM |
-| [OpenRouter](https://openrouter.ai/typesafe/jev-1.13) | — | — | `typesafe/jev-1.13` | — | **暂时别指望**，见下 |
+| [OpenRouter](https://openrouter.ai/typesafe/jev-1.14) | 不用 | 要充值 | `typesafe/jev-1.14` / `typesafe/jev-1.13` | 中位 0.21s（OpenRouter 遥测，10-01） | **10 月起已上线**，走 `POST /api/alpha/decisions`（alpha），一个 key 还能调 OpenAI、微软、Perplexity 等[同类模型](#-大厂同类模型) |
 | 开源复现（[kev](https://github.com/jaredpalmer/kev) · [SemIf](https://github.com/TheoLeeCJ/SemIf) · [laya](https://github.com/NandhaKishorM/laya)） | 不用 | 自己的显卡 | 自己训 | 看硬件 | 唯一能完全离线、数据不出内网的路子，见 [复现与评测](#-复现与评测) |
 
 ### 零门槛：classifier.dev
@@ -350,7 +350,7 @@ edgejev serve --model ./jev-int8 --port 8009    # 官方协议的 /v1/systemone
 | **一旦买了 credits 就没有月度免费额度了** | 官方原话：购买后账号转入付费层，monthly free credit 不再适用。只想白嫖就别充值 |
 | **Spend Management 管不住 AI Gateway** | 文档明写暂停项目 *does not stop AI Gateway API key usage*。要限额得用 Gateway 自己的 [Budgets](https://vercel.com/docs/ai-gateway/observability-and-spend/budgets)，可以按 team / 项目 / 单个 key / 成员分别设 |
 | **Auto top-up 记得保持关闭** | 默认就是关的，别手滑打开，否则余额见底会自动扣款续费 |
-| **OpenRouter 还没真正上线** | 有模型页，但 2026-09-19 实测 `/api/v1/models` 返回的 446 个模型里没有 jev。别照着它写代码 |
+| **OpenRouter 走的不是聊天端点** | 9-19 时 `/api/v1/models` 里还查不到 jev；10 月起它通过独立的 [Decisions API](https://openrouter.ai/docs/api/api-reference/alphadecisions/submit-a-decisions-questions-and-answers-request) 提供，路径是 `/api/alpha/decisions`（不在 `/api/v1` 下），仍是 alpha，字段可能变 |
 | **Gateway 元数据里 `context_window` 写 32000** | 对应官方的「state + 最长问题 ≤ 32k」那一项，不是 64k 总量；另外 `max_tokens` 报 0，某些会校验这个字段的框架会被卡住 |
 
 ---
@@ -423,13 +423,13 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 
 | 项 | 值 |
 | :-- | :-- |
-| 模型 | Jev 1.13 · `jev-1.13.0`，别名 `jev-latest` / `jev-preview` |
+| 模型 | **Jev 1.14** · `jev-1.14.0`（2026-10-14 发布，`jev-latest` / `jev-preview` 已指向它）；`jev-1.13.0` 仍可用，下线前提前 60 天通知 |
 | 输入 | **$0.042 / MTok** |
 | 输出 | **免费**（官方称 too cheap to meter） |
-| 上下文 | 64k / 次请求，其中 state + 最长问题 ≤ 32k |
+| 上下文 | 64k / 次请求，其中 state + 最长问题 ≤ 32k；加请求头 `TypeSafe-Danger-Zone-Long-Context: true` 可到 262k（实验性） |
 | Choice 候选上限 | 255 |
 | 速率 | 250,000 token/秒 · 1,200 请求/分钟 |
-| 模态 | 纯文本，不支持图像 / 音频 / 视频 |
+| 模态 | 默认纯文本；1.14 起可经「危险区」请求头开启图像输入与 Box（框选）原语，官方标注尚未达到生产可靠性 |
 | 端点 | `POST https://api.typesafe.ai/v1/systemone` |
 | 延迟 | 70–500ms（官方数据） |
 
@@ -455,6 +455,54 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | 窄任务 + 有标注数据 | 先量一下 | 传统基线（正则 / TF-IDF）在某些任务上更准，见 [冷静看待](#-冷静看待) |
 | 输出文字、代码、摘要 | 不会 | 这是设计，不是缺陷 |
 | 多步推理、要解释理由 | 不合适 | 它只给概率，不给理由 |
+
+---
+
+## 🏢 大厂同类模型
+
+Jev 发布后七周，**OpenAI、微软、阿里云、火山引擎、Cloudflare、AWS、Perplexity、Snowflake、上海 AI Lab** 都推出了同类的决策模型。这一节放速查表和官方文档入口，**完整横评（技术路线、逐家细节、评测出处、协议迁移、选型建议）见 [大厂 Jev 类模型横评报告](docs/vendors.md)**。
+
+> 截至 2026-11-03。价格与状态变化快，以各家官方文档为准；表中「自评」都是厂商自己的说法。
+
+### 托管 API 速查
+
+| 厂商 | 模型 | 状态 | 协议 | 输入价 / MTok | 一句话 | 文档 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| **TypeSafe** | Jev 1.14 `jev-1.14.0` | GA | `/v1/systemone` | $0.042 | 品类开创者，OpenRouter 上用量仍远超其他所有决策模型之和 | [Models](https://docs.typesafe.ai/models) |
+| **OpenAI** | `gpt-6-luna` | GA（10-22） | `/v1/decisions`，**自有 schema** | $0.10 | 没训新模型，是把 GPT-6 Luna 收窄成决策接口；吃图像与对话历史，400 题/请求 | [Decisions 指南](https://developers.openai.com/api/docs/guides/decisions) |
+| **阿里云百炼** | `decision-model-preview` | 预览 | `/compatible-mode/v1/systemone` | **限时免费** | 官方写明可直接用 `typesafe-sdk`，换 base_url 即可；单请求 ≤16 题；北京 / 新加坡 | [决策模型 API](https://www.alibabacloud.com/help/zh/model-studio/decision-model-api) |
+| **火山方舟** | `doubao-seed-2-1-lite-260915` | beta | `/api/v1/systemone` + 请求头 `ark-beta-systemone-api: true` | 按模型输入价（¥0.8） | 通用豆包模型收窄而来；**state 可直接放图像、视频、音频**；128k | [System One API](https://ark.volcengine.com/region:cn-beijing/docs/system-one-api) · [教程](https://ark.volcengine.com/region:cn-beijing/docs/decision-model) |
+| **微软** | Microsoft-Decision-1 | GA（Foundry） | `/v1/systemone` 兼容 | $0.042 | Qwen3.5-9B 后训练，价格与 Jev 相同；自评 36 基准第一 | [发布说明](https://commandline.microsoft.com/microsoft-decision-1-model-foundry/) |
+| **Perplexity** | Decider v1.2 / flash | GA | `/v1/decisions`（systemone 同形） | **$0.02 / $0.01** | 托管里最便宜；256k、128 题/请求、吃图像 | [Decisions 快速开始](https://docs.perplexity.ai/docs/decisions/quickstart) |
+| **Cloudflare** | Clef 27B / Clef-flash 9B / Clef-omni | GA | Jev API 兼容 | Clef $0.24 | 托管 + Apache-2.0 权重两头都给；omni 版吃音视频 | [Workers AI](https://developers.cloudflare.com/workers-ai/) |
+| **Snowflake** | `snowflake-decision` | 私有预览 | SQL `AI_COMPLETE` | 按 Credits | 唯一以 SQL 函数交付，一条语句对整张表逐行判断 | [发布说明](https://docs.snowflake.com/en/release-notes/2026/other/2026-10-07-ai-complete-snowflake-decision-preview) |
+
+**开放权重**：[上海 AI Lab 书生·明决 Intern-Decision](https://github.com/InternLM/Intern-Decision)（0.8B / 2B / 4B，多模态，有论文，自评 4B 胜 Jev 1.13）· [AWS Strands Decider 2B](https://github.com/strands-labs/strands-decider)（只有本地版，Bedrock 上没有托管，数据与配方全开源）· Cloudflare Clef 与 Perplexity Decider 也放了权重。
+
+**没找到官方产品**：Google、Anthropic、百度、腾讯、智谱、DeepSeek、Kimi、MiniMax 等，截至 11-03 均未推出决策模型或 `/v1/systemone` 端点。
+
+### 三个值得先知道的结论
+
+1. **两条路线**：Jev、Clef、Decider、微软、明决是**专门训练的决策模型**；OpenAI 和火山是**把通用大模型收窄成决策接口**——多模态、长上下文白送，但贵一截，且两家都没公开校准数据。门控阈值必须自己量。
+2. **协议是「题型对齐、合同没对齐」**：百炼、火山、微软、Clef、Perplexity、OpenRouter 基本沿用 `/v1/systemone` 的 `state + questions` 形状，改 URL 就能切；**OpenAI 的 `predicate` / `choices[]` / 数组形 `answers` 要改代码**，Vercel Gateway 又把 noul 叫 `boolean`。
+3. **用量上 Jev 仍是绝对主流**：OpenRouter Decisions 用量榜上 Jev 1.13 + 1.14 合计约 15 亿次请求，GPT-6 Luna Decisions 约 4,460 万次且环比下降。
+
+### 我们的测评
+
+仓库新增了一套可复现的统一横评：[`bench/zh_tickets.jsonl`](bench/zh_tickets.jsonl)（40 条中文工单，四分类路由 + 是否紧急）和 [`bench/vendor_bench.py`](bench/vendor_bench.py)（纯标准库，覆盖 TypeSafe、OpenAI、百炼、火山、Perplexity、OpenRouter 上 9 个决策模型以及任意本地 `/v1/systemone`；统计准确率、ECE、p50/p95 延迟、每千次成本）。
+
+```bash
+python bench/vendor_bench.py --list   # 看缺哪些 key
+python bench/vendor_bench.py          # 跑全部已配置的 provider，结果写入 bench/results/
+```
+
+第一轮实测（2026-11-04，[原始数据](bench/results/2026-11-04.json)）：
+
+| Provider | 路由准确率 | 紧急度准确率 | 平均置信度 | p50 / p95 | 每千次（估） |
+| :-- | --: | --: | --: | --: | --: |
+| 火山方舟 `doubao-seed-2-1-lite-260915` | **97.5%**（39/40） | 90.0% | 0.97 | 759 / 1,837 ms | ¥0.35 |
+
+唯一的路由错例置信度只有 0.507（其余最低 0.838），门控能拦住；紧急度的 4 个错全是「涉及钱的投诉判成紧急」，根源是我们的判据把「资金损失」写进了紧急定义。延迟比 Jev 慢一截，是「大模型收窄」路线的代价。详细分析见 [报告第五节](docs/vendors.md#五我们的测评)。其他厂商本轮未实测，相关数字均来自官方文档或第三方并标注了出处；有 key 的可以用上面的脚本自己对照。
 
 ---
 
@@ -887,6 +935,7 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 | [**AbdelStark/awesome-typesafe**](https://github.com/AbdelStark/awesome-typesafe) | ![](https://badgen.net/github/stars/AbdelStark/awesome-typesafe) | 覆盖整个 TypeSafe / System One，不只 Jev |
 | [**AnotiaWang/awesome-jev**](https://github.com/AnotiaWang/awesome-jev) | ![](https://badgen.net/github/stars/AnotiaWang/awesome-jev) | 结构最完整的一份，本列表的选品参考了它，[有 README_zh](https://github.com/AnotiaWang/awesome-jev/blob/main/README_zh.md) |
 | [**valentynkit/awesome-jev-typesafe**](https://github.com/valentynkit/awesome-jev-typesafe) | ![](https://badgen.net/github/stars/valentynkit/awesome-jev-typesafe) | CC0 协议，按「你会安装什么」分类，开头一节讲模型局限，通过 awesome-lint |
+| [**andyrewlee/awesome-system-one**](https://github.com/andyrewlee/awesome-system-one) | ![](https://badgen.net/github/stars/andyrewlee/awesome-system-one) | 不只收 Jev，按品类收**所有** System One / 决策模型：托管与开源替代、SDK、基准榜单。查其他厂商的决策模型从这份开始 |
 | [**hellogumbo/awesome-jev**](https://github.com/hellogumbo/awesome-jev) | ![](https://badgen.net/github/stars/hellogumbo/awesome-jev) | 社区目录站形态 |
 | [**JackZeng/Jev_apps**](https://github.com/JackZeng/Jev_apps) | ![](https://badgen.net/github/stars/JackZeng/Jev_apps) | 不是链接列表，是**案例库**：129 个应用逐个拆开讲原理，中英双语，每条带 A/B/C 证据分级和原帖溯源。「这个宣传超出证据了」标得很直接，本列表这次的补充就是对着它查的 |
 
@@ -929,12 +978,13 @@ npx skills add typesafe-ai/skills --skill typesafe-ai  # 其他 Agent
 
 ## 📖 中文指南
 
-英文资料已经相当丰富，所以这两份只补中文世界缺的那一块：怎么写第一段代码，以及怎么用自己的数据把阈值量出来。
+英文资料已经相当丰富，所以这几份只补中文世界缺的那一块：怎么写第一段代码，以及怎么用自己的数据把阈值量出来。
 
 | 文档 | 内容 |
 | :-- | :-- |
 | [**上手指南**](docs/quickstart.md) | 接入路径、三原语讲透、置信度门控怎么定阈值、一个能上线的工单分类器、报错对照 |
 | [**图解说明**](https://code.jiangshu.ai/awesome-jev-zh/) | 16 页幻灯片：真实请求、真实返回、真实数字。转给同事看，比你解释半天管用 |
+| [**大厂 Jev 类模型横评**](docs/vendors.md) | OpenAI / 阿里云百炼 / 火山方舟 / 微软 / Perplexity / Cloudflare / AWS / Snowflake / 书生·明决：两条技术路线、逐家规格与价格、评测出处、协议迁移对照、选型表 |
 | [**概念与心法**](docs/concepts.md) | System One 新在哪、RLCD vs RLHF、为什么问题要原子、校准概率怎么读、LLM 流程改造四步法 |
 
 ---

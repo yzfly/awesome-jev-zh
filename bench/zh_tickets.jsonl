@@ -1,0 +1,40 @@
+{"id": 1, "text": "我的信用卡这个月被扣了两次会员费，麻烦尽快退一笔。", "dept": "billing", "urgent": false}
+{"id": 2, "text": "线上全挂了，所有接口都返回 502，客户都在群里骂，赶紧看一下！", "dept": "technical", "urgent": true}
+{"id": 3, "text": "想了解一下你们企业版 50 人以上有没有阶梯价格？", "dept": "sales", "urgent": false}
+{"id": 4, "text": "登录一直提示密码错误，我已经重置了三次还是不行。", "dept": "account", "urgent": false}
+{"id": 5, "text": "发票抬头开错了，能不能帮我重新开一张？", "dept": "billing", "urgent": false}
+{"id": 6, "text": "Webhook 回调从昨晚开始全部超时，订单状态同步不了，今天中午之前必须恢复。", "dept": "technical", "urgent": true}
+{"id": 7, "text": "我们公司在评估采购，能安排一次产品演示吗？", "dept": "sales", "urgent": false}
+{"id": 8, "text": "账号被盗了！有人用我的账号在异地登录还改了绑定手机，请马上冻结！", "dept": "account", "urgent": true}
+{"id": 9, "text": "续费的时候提示支付失败，但是银行卡显示已经扣款了。", "dept": "billing", "urgent": false}
+{"id": 10, "text": "SDK 升级到 3.2 之后上传图片会崩溃，日志里是空指针。", "dept": "technical", "urgent": false}
+{"id": 11, "text": "年付和月付的区别是什么？年付能打几折？", "dept": "sales", "urgent": false}
+{"id": 12, "text": "想把账号的主邮箱换成公司邮箱，在哪里改？", "dept": "account", "urgent": false}
+{"id": 13, "text": "今天是退款截止日，申请提交了三天还没人处理，今天不退我就投诉到消协。", "dept": "billing", "urgent": true}
+{"id": 14, "text": "数据库连接池被打满了，生产环境所有写入都失败，正在丢数据。", "dept": "technical", "urgent": true}
+{"id": 15, "text": "你们和竞品比有什么优势？我们下个季度可能会换供应商。", "dept": "sales", "urgent": false}
+{"id": 16, "text": "离职员工的子账号怎么删除？权限要收回。", "dept": "account", "urgent": false}
+{"id": 17, "text": "优惠券输进去提示无效，但明明还没过期。", "dept": "billing", "urgent": false}
+{"id": 18, "text": "导出报表的按钮点了没反应，Chrome 和 Safari 都试过了。", "dept": "technical", "urgent": false}
+{"id": 19, "text": "教育机构有没有优惠？我们是一所大学的实验室。", "dept": "sales", "urgent": false}
+{"id": 20, "text": "两步验证的手机丢了，现在登不进去，明早要给客户演示，急！", "dept": "account", "urgent": true}
+{"id": 21, "text": "上个月的账单里多了一项我没用过的增值服务费用。", "dept": "billing", "urgent": false}
+{"id": 22, "text": "API 返回 429 太频繁了，我们的调用量其实远没到限额。", "dept": "technical", "urgent": false}
+{"id": 23, "text": "我们想签一个三年的框架合同，能找销售经理聊聊吗？", "dept": "sales", "urgent": false}
+{"id": 24, "text": "团队管理员离职了，现在没人有管理权限，怎么转移所有者？", "dept": "account", "urgent": false}
+{"id": 25, "text": "自动续费我明明关了，今天又扣了 2999 元，马上给我退回来！", "dept": "billing", "urgent": true}
+{"id": 26, "text": "支付页面在安卓上白屏，用户付不了款，大促今晚八点开始。", "dept": "technical", "urgent": true}
+{"id": 27, "text": "请问私有化部署怎么收费？大概要多少预算？", "dept": "sales", "urgent": false}
+{"id": 28, "text": "收不到注册验证码短信，换了两个手机号都不行。", "dept": "account", "urgent": false}
+{"id": 29, "text": "能不能把付款方式从信用卡换成对公转账？", "dept": "billing", "urgent": false}
+{"id": 30, "text": "搜索结果和上周相比明显变差了，很多相关文档搜不出来。", "dept": "technical", "urgent": false}
+{"id": 31, "text": "试用期快结束了，想了解一下正式版套餐有哪些。", "dept": "sales", "urgent": false}
+{"id": 32, "text": "公司要求注销所有个人数据，请帮我删除账号和全部记录。", "dept": "account", "urgent": false}
+{"id": 33, "text": "合同里写的是按季度付款，你们却按月开了账单，财务那边对不上。", "dept": "billing", "urgent": false}
+{"id": 34, "text": "证书昨天过期了，现在所有客户端都连不上服务器，业务全停。", "dept": "technical", "urgent": true}
+{"id": 35, "text": "代理商合作政策是怎样的？我们想在华南区做渠道。", "dept": "sales", "urgent": false}
+{"id": 36, "text": "单点登录配置好以后，部分员工还是跳回了旧的登录页。", "dept": "account", "urgent": false}
+{"id": 37, "text": "退款到账了但是金额少了 30 块，是扣了手续费吗？", "dept": "billing", "urgent": false}
+{"id": 38, "text": "移动端推送通知延迟好几个小时才到。", "dept": "technical", "urgent": false}
+{"id": 39, "text": "看到你们官网说可以申请免费额度，怎么申请？", "dept": "sales", "urgent": false}
+{"id": 40, "text": "我的账号被系统误封了，店铺所有订单都发不了货，每分钟都在损失。", "dept": "account", "urgent": true}
