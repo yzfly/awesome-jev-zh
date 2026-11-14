@@ -80,7 +80,7 @@ Star 过 500 的项目，全生态一共这些。时间有限就先看这一栏�
 | [**NandhaKishorM/laya**](https://github.com/NandhaKishorM/laya) | ![](https://badgen.net/github/stars/NandhaKishorM/laya) | 多语言决策模型 | 非自回归 System 1 决策引擎：单问题 33ms、批量 7.2ms/问（T4 自测），同样用严格评分规则做 RL，**覆盖 100+ 语言**——中文场景想找可自建的替代品，这是目前星数最高的一个。作者称此路线早于 Jev，README 里与 Jev 的同数据集对比属自评 |
 | [**tamaratran/fast-jev-compaction**](https://github.com/tamaratran/fast-jev-compaction) | ![](https://badgen.net/github/stars/tamaratran/fast-jev-compaction) | 上下文工程 | Claude Code 插件：把上下文压缩的「总结」换成 Jev 判断——每次工具调用和结果都打分，决定留不留。**上下文工程的新范式**，[Agent 工具](#-agent-工具) 里的 winnow、yoshi 都是同一思路的变体 |
 | [**vercel/eve**](https://github.com/vercel/eve) | ![](https://badgen.net/github/stars/vercel/eve) | Agent 框架 | Vercel 的 Agent 框架，实验性 `autoModel` 默认用 Gateway 上的 `typesafe-ai/jev` 从白名单里挑语言模型。目前把 Jev 放进默认路径的主流框架，就这一个。同类见 [Agent 工具](#-agent-工具) |
-| [**TheoLeeCJ/SemIf**](https://github.com/TheoLeeCJ/SemIf) | ![](https://badgen.net/github/stars/TheoLeeCJ/SemIf) | 开源复现 | 最受关注的复现，原名 `openjev`。一张 RTX 3090 能不能跑 Jev 风格的东西？直接读选项 logits，不生成文本。**不是 TypeSafe 的模型**，作者自己也强调无隶属关系。同类见 [复现与评测](#-复现与评测) |
+| [**TheoLeeCJ/SemIf**](https://github.com/TheoLeeCJ/SemIf-OpenJev) | ![](https://badgen.net/github/stars/TheoLeeCJ/SemIf-OpenJev) | 开源复现 | 最受关注的复现，原名 `openjev`。一张 RTX 3090 能不能跑 Jev 风格的东西？直接读选项 logits，不生成文本。**不是 TypeSafe 的模型**，作者自己也强调无隶属关系。同类见 [复现与评测](#-复现与评测) |
 | [**TianyuCodings/NanoJev**](https://github.com/TianyuCodings/NanoJev) | ![](https://badgen.net/github/stars/TianyuCodings/NanoJev) | 开源复现 | nano 版 Jev：并行决策、动态候选、端到端训练流水线。**想搞懂训练的从这个读** |
 | [**jarrodwatts/jev-trader**](https://github.com/jarrodwatts/jev-trader) | ![](https://badgen.net/github/stars/jarrodwatts/jev-trader) | 链上交易 | 每个 Monad 区块对 Kuru 的 MON-USDC 做一次买卖决策——区块时间摆在那儿，这是少数几个「延迟本身就是硬约束」的场景。在线：[jev-trader.vercel.app](https://jev-trader.vercel.app/) |
 | [**jaredpalmer/kev**](https://github.com/jaredpalmer/kev) | ![](https://badgen.net/github/stars/jaredpalmer/kev) | 开源复现 | Qwen 上挂 LoRA + readout head（0.5B–8B），`POST /v1/systemone` 与官方 SDK 兼容，改个 `base_url` 就能跑本地。冻结评测集上域外 kev-8b 0.77 对真 Jev 0.86（作者自测）。M5 上 1h45m 能训出 0.5B |
@@ -124,7 +124,7 @@ TypeSafe 管这类模型叫 System One，取自卡尼曼的「系统一」，快
 - **一次前向答完多题**——所有问题和 state 打包进同一条 token 序列，用 **block-causal 注意力掩码**让每个问题都能看到 state、但看不到兄弟问题；每个问题分支的 position id 重新计数，所以**问题顺序不影响结果**。作者实测打包请求与拆开单发的结果一致到 `4e-6`
 - **训练**：在选项分布上做交叉熵，训练数据和线上请求走同一个渲染器。学习率是关键，5e-5 比默认 2e-4 好，高了会「侵蚀基座模型已有的知识」
 
-[TheoLeeCJ/SemIf](https://github.com/TheoLeeCJ/SemIf)（直接读选项 logits）、[TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev)、[vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) 三家路子一致。所以公开可验证的那部分机制可以概括成一句：**一个普通的 transformer 骨干，外挂一个在候选项上打分的 readout head，一次前向把所有题答完，靠掩码保证题与题之间互相看不见。**
+[TheoLeeCJ/SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev)（直接读选项 logits）、[TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev)、[vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) 三家路子一致。所以公开可验证的那部分机制可以概括成一句：**一个普通的 transformer 骨干，外挂一个在候选项上打分的 readout head，一次前向把所有题答完，靠掩码保证题与题之间互相看不见。**
 
 这也解释了它的几个硬边界：选项必须预先穷举（所以 Choice 上限 255）、不可能输出 schema 之外的东西（结构上做不到幻觉）、以及为什么它彻底不会写字——模型里根本没有解码这一步。
 
@@ -191,7 +191,7 @@ TypeSafe 管这类模型叫 System One，取自卡尼曼的「系统一」，快
 | [官方 Playground](https://console.typesafe.ai/playground) | 看账号 | — | — | — | 不写代码，粘一段 state 点几下 |
 | [官方 adapter](https://github.com/typesafe-ai/system-one-adapter-python) | 不用 | 用你自己的 LLM key | — | 取决于后端 | 先把代码写完，后端暂时挂普通 LLM |
 | [OpenRouter](https://openrouter.ai/typesafe/jev-1.14) | 不用 | 要充值 | `typesafe/jev-1.14` / `typesafe/jev-1.13` | 中位 0.21s（OpenRouter 遥测，10-01） | **10 月起已上线**，走 `POST /api/alpha/decisions`（alpha），一个 key 还能调 OpenAI、微软、Perplexity 等[同类模型](#-大厂同类模型) |
-| 开源复现（[kev](https://github.com/jaredpalmer/kev) · [SemIf](https://github.com/TheoLeeCJ/SemIf) · [laya](https://github.com/NandhaKishorM/laya)） | 不用 | 自己的显卡 | 自己训 | 看硬件 | 唯一能完全离线、数据不出内网的路子，见 [复现与评测](#-复现与评测) |
+| 开源复现（[kev](https://github.com/jaredpalmer/kev) · [SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev) · [laya](https://github.com/NandhaKishorM/laya)） | 不用 | 自己的显卡 | 自己训 | 看硬件 | 唯一能完全离线、数据不出内网的路子，见 [复现与评测](#-复现与评测) |
 
 ### 零门槛：classifier.dev
 
@@ -273,7 +273,7 @@ curl -X POST https://classifier.dev/ -H "Content-Type: application/json" \
 | [laya](https://github.com/NandhaKishorM/laya) | ModernBERT-large | 421M | 39.5 ms | 15.9 ms/题 | 单张 T4 | 同上 | Apache-2.0 |
 | [kev-0.5b](https://github.com/jaredpalmer/kev) | Qwen2.5-0.5B + LoRA | 0.5B | ~160 ms (fp32) | — | 消费级即可 | typed questions | Apache-2.0 |
 | [kev-4b](https://github.com/jaredpalmer/kev) | Qwen3-4B + LoRA | 4B | ~1 s (bf16) | 3 题 277ms (M5) | 32GB Mac | typed questions | Apache-2.0 |
-| [SemIf](https://github.com/TheoLeeCJ/SemIf) | Qwen3.5-4B | 4B | 1.02 s | 20 决策/秒（共享 state） | RTX 3090 / MLX | 直读选项 logits | MIT |
+| [SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev) | Qwen3.5-4B | 4B | 1.02 s | 20 决策/秒（共享 state） | RTX 3090 / MLX | 直读选项 logits | MIT |
 
 两点值得单独说：
 
@@ -330,7 +330,7 @@ edgejev serve --model ./jev-int8 --port 8009    # 官方协议的 /v1/systemone
 
 想要真概率就得往下走一层：openjev 用 DiffusionGemma 的一步 structured read 直接拿 logprobs，但依赖 vLLM 未合入的 `diffusion_seed_canvas`、`diffusion_read_only` 等扩展。**准确和易装，目前只能二选一。**
 
-> 顺带澄清一个容易混的点：[SemIf](https://github.com/TheoLeeCJ/SemIf) 曾用名也叫 `openjev`，和上面 razorback16 的 `openjev` **是两个不相干的项目**。
+> 顺带澄清一个容易混的点：[SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev) 曾用名也叫 `openjev`，和上面 razorback16 的 `openjev` **是两个不相干的项目**。
 
 > **部署上有个坑能直接毁掉延迟优势**：默认 `max_loaded=1`，如果请求在不同语言间来回切，模型会**每个请求重建一次**——实测 CPU 上中位 7.4 秒、T4 上 10.3 秒。上生产务必预加载并放大 `max_loaded`，否则 33ms 会变成 10 秒。
 
@@ -677,7 +677,7 @@ python bench/vendor_bench.py          # 跑全部已配置的 provider，结果�
 | [**opaielsheikh/ai-elo-ranker**](https://github.com/opaielsheikh/ai-elo-ranker) | ![](https://badgen.net/github/stars/opaielsheikh/ai-elo-ranker) | 高速递归 AI Elo 锦标赛引擎，Jev + 瑞士轮匹配 |
 | [**lukaske/jev-doom-agent**](https://github.com/lukaske/jev-doom-agent) | ![](https://badgen.net/github/stars/lukaske/jev-doom-agent) | 浏览器里的 Doom（Chocolate Doom WASM），空间状态 + 实时决策遥测。**官方发布 demo 的同源玩法，约 $7/小时** |
 | [**lbotinelly/jev-little-airways**](https://github.com/lbotinelly/jev-little-airways) | ![](https://badgen.net/github/stars/lbotinelly/jev-little-airways) | 玩具群岛空管：每架飞机只看得见自己附近，Jev 判断备降 / 紧急 / 谁先落地，约 150ms |
-| [**phureewat29/got-jev**](https://github.com/phureewat29/got-jev) | ![](https://badgen.net/github/stars/phureewat29/got-jev) | 权力的游戏角色扮演：故事模型写下一场，Jev 回答「他在哪、多危险、配什么音乐」 |
+| [**phureewat29/got-jev**](https://github.com/phureewat29/jev-got) | ![](https://badgen.net/github/stars/phureewat29/jev-got) | 权力的游戏角色扮演：故事模型写下一场，Jev 回答「他在哪、多危险、配什么音乐」 |
 | [**mizchi/jev-gomoku**](https://github.com/mizchi/jev-gomoku) | ![](https://badgen.net/github/stars/mizchi/jev-gomoku) | MoonBit 客户端 + 两个 Jev 互相下五子棋，[配套文章](https://zenn.dev/mizchi/articles/jev-plays-gomoku)带耗时日志 |
 | [**joshlarsen/jev-t-rex-runner**](https://github.com/joshlarsen/jev-t-rex-runner) | ![](https://badgen.net/github/stars/joshlarsen/jev-t-rex-runner) | Chrome 小恐龙由 Jev 来跳 |
 | [**siroccomask/snake-jev**](https://github.com/siroccomask/snake-jev) | ![](https://badgen.net/github/stars/siroccomask/snake-jev) | 贪吃蛇，每局几百次类型化转向决策 |
@@ -714,7 +714,7 @@ python bench/vendor_bench.py          # 跑全部已配置的 provider，结果�
 | [**gargpratyush/jev-router**](https://github.com/gargpratyush/jev-router) | ![](https://badgen.net/github/stars/gargpratyush/jev-router) | Claude Code 与 Codex 的每轮路由：简单活走快档，难活走强档。`npm i -g jev-router` |
 | [**jkudish/jev-mcp**](https://github.com/jkudish/jev-mcp) | ![](https://badgen.net/github/stars/jkudish/jev-mcp) | Node MCP，封装三条 cookbook：`jev_verify` 引文核验、`jev_screen` 注入护栏、`jev_find` 无 embedding 语义排序。`npx -y github:jkudish/jev-mcp` |
 | [**NiazMorshed2007/jev-review**](https://github.com/NiazMorshed2007/jev-review) | ![](https://badgen.net/github/stars/NiazMorshed2007/jev-review) | 本地优先 MCP：Claude Code / Codex / Cursor / OpenCode 边写边拿结构化质量审查 |
-| [**itsmostafa/typesafe-mcp**](https://github.com/itsmostafa/typesafe-mcp) | ![](https://badgen.net/github/stars/itsmostafa/typesafe-mcp) | Go 写的 CLI + 单二进制 MCP，适配 Claude Desktop / Claude Code / Codex |
+| [**itsmostafa/typesafe-mcp**](https://github.com/itsmostafa/system-one-connector) | ![](https://badgen.net/github/stars/itsmostafa/system-one-connector) | Go 写的 CLI + 单二进制 MCP，适配 Claude Desktop / Claude Code / Codex |
 | [**0xNatoshi/jev-codex-router**](https://github.com/0xNatoshi/jev-codex-router) | ![](https://badgen.net/github/stars/0xNatoshi/jev-codex-router) | Codex 每轮路由：Jev 选模型、思考深度和速度模式 |
 | [**y0usaf/pi-jev**](https://github.com/y0usaf/pi-jev) | ![](https://badgen.net/github/stars/y0usaf/pi-jev) | Pi 扩展：影子模式工具调用门控、输出评判、类型化 `jev_ask` |
 | [**dbreunig/building-with-jev-skill**](https://github.com/dbreunig/building-with-jev-skill) | ![](https://badgen.net/github/stars/dbreunig/building-with-jev-skill) | 一个专门教 Agent「怎么写调用 Jev 的程序」的 Skill |
@@ -745,7 +745,7 @@ python bench/vendor_bench.py          # 跑全部已配置的 provider，结果�
 | 项目 | Star | 说明 |
 | :-- | :-- | :-- |
 | [**NandhaKishorM/laya**](https://github.com/NandhaKishorM/laya) | ![](https://badgen.net/github/stars/NandhaKishorM/laya) | 多语言非自回归 System 1 决策引擎：choice / score / noul 单次前向，33ms 一问、批量 7.2ms 一问（T4 自测），**覆盖 100+ 语言**，权重与 Colab demo 都在 Hugging Face 上。作者称这条路线早于 Jev，README 里与 Jev 的同数据集对比属作者自评 |
-| [**TheoLeeCJ/SemIf**](https://github.com/TheoLeeCJ/SemIf) | ![](https://badgen.net/github/stars/TheoLeeCJ/SemIf) | 最受关注的复现（原名 `openjev`）：一张 RTX 3090 能不能跑 Jev 风格的东西？直接读选项 logits，不生成文本 |
+| [**TheoLeeCJ/SemIf**](https://github.com/TheoLeeCJ/SemIf-OpenJev) | ![](https://badgen.net/github/stars/TheoLeeCJ/SemIf-OpenJev) | 最受关注的复现（原名 `openjev`）：一张 RTX 3090 能不能跑 Jev 风格的东西？直接读选项 logits，不生成文本 |
 | [**TianyuCodings/NanoJev**](https://github.com/TianyuCodings/NanoJev) | ![](https://badgen.net/github/stars/TianyuCodings/NanoJev) | nano 版 Jev：并行决策、动态候选、端到端训练流水线。**想搞懂训练的从这个读** |
 | [**jaredpalmer/kev**](https://github.com/jaredpalmer/kev) | ![](https://badgen.net/github/stars/jaredpalmer/kev) | Qwen 上挂 LoRA + readout head（0.5B / 0.6B / 4B / 8B），block-causal mask 保证问题之间互相看不见，打包与分开请求的结果对到 4e-6。`POST /v1/systemone` 与官方 SDK 兼容，改 `base_url` 即可本地跑。冻结评测集域外分：kev-4b 0.76、kev-8b 0.77、真 Jev 0.86（作者自测） |
 | [**bespokelabsai/nimble**](https://github.com/bespokelabsai/nimble) | ![](https://badgen.net/github/stars/bespokelabsai/nimble) | Bespoke Labs 的开源 Jev（Bespoke Nimble 9B）：**数据、训练、服务的完整配方**。Qwen3.5-9B 上只对答案 token 做 LoRA，数据靠「改一个事实让正确答案翻转」的对比式构造；324 条留出样本上对齐参考标签 90.1%（基座 66.4%、Jev 1.13.0 93.2%）。作者写明一天做完、**没有蒸馏 Jev** |
@@ -753,7 +753,7 @@ python bench/vendor_bench.py          # 跑全部已配置的 provider，结果�
 | [**githubnext/localjev**](https://github.com/githubnext/localjev) | ![](https://badgen.net/github/stars/githubnext/localjev) | GitHub Next 出的**协议桥**（TypeScript/Bun）：本机起一个 Jev 兼容的 `/v1/systemone`，背后转成分类 prompt 发给任意 OpenAI 兼容端点（默认 oMLX 上的 DiffusionGemma）。**概率是模型自报的，不是读 logits**，作者自己写明「wire-compatible, but not mathematically equivalent」。附 AG News / BoolQ / SST-5 的多模型 bake-off 脚本。详见 [体验渠道](#-体验渠道) |
 | [**featherless-ai/simple-jev**](https://github.com/featherless-ai/simple-jev) | ![](https://badgen.net/github/stars/featherless-ai/simple-jev) | 把 HF 上任意兼容开源模型变成 classifier / jev 端点：读每个问题的下一 token logits，由服务端拼出 JSON，模型不生成回答。有免登录公开 demo API（2k 上下文、2 RPS）和 playground，共用校验与评分逻辑放在纯 Python 的 `common/` 里 |
 | [**Mapika/decider**](https://github.com/Mapika/decider) | ![](https://badgen.net/github/stars/Mapika/decider) | 基于 Qwen3.5-2B 微调：一次前向给出类型化决策和校准概率 |
-| [**razorback16/openjev**](https://github.com/razorback16/openjev) | ![](https://badgen.net/github/stars/razorback16/openjev) | DiffusionGemma 上的 Jev 兼容决策服务，用一步 structured read **真从 logits 拿概率**；代价是依赖 vLLM 未合入的 `diffusion_seed_canvas`、`diffusion_read_only` 等扩展。注意与曾用名相同的 [SemIf](https://github.com/TheoLeeCJ/SemIf) 无关 |
+| [**razorback16/openjev**](https://github.com/razorback16/openjev) | ![](https://badgen.net/github/stars/razorback16/openjev) | DiffusionGemma 上的 Jev 兼容决策服务，用一步 structured read **真从 logits 拿概率**；代价是依赖 vLLM 未合入的 `diffusion_seed_canvas`、`diffusion_read_only` 等扩展。注意与曾用名相同的 [SemIf](https://github.com/TheoLeeCJ/SemIf-OpenJev) 无关 |
 | [**ekzhang/openjev-sglang**](https://github.com/ekzhang/openjev-sglang) | ![](https://badgen.net/github/stars/ekzhang/openjev-sglang) | 基于开源模型的 Jev 兼容 API 端点（prefill-only） |
 | [**Heman10x-NGU/openJev-verdict-2.0**](https://github.com/Heman10x-NGU/openJev-verdict-2.0) | ![](https://badgen.net/github/stars/Heman10x-NGU/openJev-verdict-2.0) | 151M 的非自回归决策引擎（ModernBERT-base + GLiClass），单次判断约 20–25ms，还带一个 WebGPU 的浏览器端引擎。JevBench v1.4 引擎那一行排到第 4。注意仓库里 Verdict 2.0 的权重还是 Git LFS 指针，能下载的是 HF 上的 `rlcd-modernbert-151m` |
 | [**hr98w/jev-visual**](https://github.com/hr98w/jev-visual) | ![](https://badgen.net/github/stars/hr98w/jev-visual) | Apple Silicon 上的 Jev 风格视觉推理教学实验：共享上下文、直接给候选打分 |
@@ -772,7 +772,7 @@ python bench/vendor_bench.py          # 跑全部已配置的 provider，结果�
 | [**genai-craft/openvons**](https://github.com/genai-craft/openvons) | ![](https://badgen.net/github/stars/genai-craft/openvons) | 日文向 open-Jev：文本 / 图像 / 日语语音命令的概率判断层 |
 | [**siliconkernel/vllm-jev-decison**](https://github.com/siliconkernel/vllm-jev-decison) | ![](https://badgen.net/github/stars/siliconkernel/vllm-jev-decison) | 给 vLLM 加「只分类」模式：有限 schema 候选打分 + 概率 |
 | [**us/jev-local**](https://github.com/us/jev-local) | ![](https://badgen.net/github/stars/us/jev-local) | 一条命令起本地 `/v1/systemone`（Docker Compose + 冒烟测试），默认 Qwen3.5-9B 按每个选项的平均 logprob 打分，16GB Mac 可切 light 档的 Qwen2.5-3B。注意默认 scorer 是确定性桩、不带智能，要真模型得设 `JEVLOCAL_SCORER=hf` |
-| [**kotoba-lang/typed-decisions**](https://github.com/kotoba-lang/typed-decisions) | ![](https://badgen.net/github/stars/kotoba-lang/typed-decisions) | 同一套 Jev 形状分别做在 ModernBERT 编码器和 LLaDA-MoE 扩散语言模型两个骨干上，**速度、准确率、校准、训练成本四项并排列出来**，适合对比两条技术路线 |
+| [**kotoba-lang/typed-decisions**](https://github.com/mithril-lang/typed-decisions) | ![](https://badgen.net/github/stars/mithril-lang/typed-decisions) | 同一套 Jev 形状分别做在 ModernBERT 编码器和 LLaDA-MoE 扩散语言模型两个骨干上，**速度、准确率、校准、训练成本四项并排列出来**，适合对比两条技术路线 |
 | [**SamratDuttaOfficial/WaterSheep**](https://github.com/SamratDuttaOfficial/WaterSheep) | ![](https://badgen.net/github/stars/SamratDuttaOfficial/WaterSheep) | Apache-2.0 的开源 Jev 替代，ModernBERT-base 微调：`watersheep --serve` 在本地起一个 Jev 兼容的 `/v1/systemone`，官方 `typesafe-sdk` 把 `TYPESAFE_BASE_URL` 指过来就能用；除 Choice / Score / Noul 外还支持多标签，每个选项都给概率，测试集 ECE 0.026（作者自测） |
 | [**IoTSharp/Sezika**](https://github.com/IoTSharp/Sezika) | ![](https://badgen.net/github/stars/IoTSharp/Sezika) | 受 Jev / System One 接口启发、面向多语言的本地非自回归决策引擎：**C# / .NET 10** 输出 Choice / Score / Boolean 及概率分布，提供类库与 CLI；CPU/GPU 算子用 C# 实现，GPU 走构建期 ILGPU → PTX + CUDA Driver，已验证既有模型的 Native AOT 推理。**实验项目，作者已于 2026-10-13 宣布暂停开发；训练未完成，概率未校准、逐语言质量待验收**；自有代码 Apache-2.0，模型权重单独管理 |
 | [**NullPo-jp/PocketJev**](https://github.com/NullPo-jp/PocketJev) | ![](https://badgen.net/github/stars/NullPo-jp/PocketJev) | iPhone 端侧视觉判断：MLX + Qwen3-VL 选项 logits。相机 + 三选一，约 1 秒，不存照片 |
@@ -790,7 +790,7 @@ python bench/vendor_bench.py          # 跑全部已配置的 provider，结果�
 | [**vinilana/jev-eval-agent**](https://github.com/vinilana/jev-eval-agent) | ![](https://badgen.net/github/stars/vinilana/jev-eval-agent) | 早期 Jev 测试的公开评测 harness |
 | [**nekuda-ai/WindTunnel**](https://github.com/nekuda-ai/WindTunnel) | ![](https://badgen.net/github/stars/nekuda-ai/WindTunnel) | WebMCP 基准，21 种配置横向比成功率 / 成本 / 耗时。Jev + Mercury 2.5 走 WebMCP **49/49 全解**、每次中位 $0.0011、3.2 秒，排第一；同一对模型改走 ultrafast DOM 控制只剩 25/49，单次更便宜（$0.0008）但成得少。少见的第三方横向基准，成本和时延都列了 |
 | [**fstandhartinger/jevbench**](https://github.com/fstandhartinger/jevbench) | ![](https://badgen.net/github/stars/fstandhartinger/jevbench) | **目前覆盖面最广的第三方横评**：每个系统跑同样的 534 道冻结决策题（其中 220 道 hard 题由 Claude Opus 5 与 GPT-5.6 写、交叉评审，开跑前就冻结并哈希，一半留出不公开）。**榜上共 42 行结果、36 个不同项目**：**38 行进榜**（Jev 本体 1、开源复现 28 行对应 23 个项目、通用分类器 5、闭源决策 API 1、LLM 基线 3），外加 1 个名誉提名（classifier.dev，fast 档本身就是 Jev，排进去等于让 Jev 跟自己比）和 3 行只跑完一部分的。按智能 / 校准 / 速度 / 成本四轴各 25% 取**几何平均**——某一轴弱会把总分拽下去。v1.2.10 榜首 Jev 1.13.0 **75.4**，SemIf 74.7、djev 74.3 紧随其后。成本列的单位是**每千次决策**而不是每千 token，作者还专门发过一版修正把这个单位写清楚。局限写得很坦白：自托管与 demo 端点的延迟统一 ×2 + 0.15s 是**假设不是实测**。一人业余项目，与 TypeSafe 无关 |
-| [**iammrduncan/typesafe-ai-benchmark**](https://github.com/iammrduncan/typesafe-ai-benchmark) | ![](https://badgen.net/github/stars/iammrduncan/typesafe-ai-benchmark) | 同一套 System One 问题，对比 Jev 与 Cerebras 上的 Qwen 3.8 27B |
+| [**iammrduncan/typesafe-ai-benchmark**](https://github.com/iammrduncan/inference-benchmarks) | ![](https://badgen.net/github/stars/iammrduncan/inference-benchmarks) | 同一套 System One 问题，对比 Jev 与 Cerebras 上的 Qwen 3.8 27B |
 | [**AbdelStark/jev-benchmarks**](https://github.com/AbdelStark/jev-benchmarks) | ![](https://badgen.net/github/stars/AbdelStark/jev-benchmarks) | 面向类型化决策模型的概率感知评测框架 |
 | [**mahlernim/jev-korean-benchmark**](https://github.com/mahlernim/jev-korean-benchmark) | ![](https://badgen.net/github/stars/mahlernim/jev-korean-benchmark) | 韩语理解与医学文本的可复现 early-access 评测。**非英语场景的少有数据点** |
 | [**anessbelbati/jev-rerank-bench**](https://github.com/anessbelbati/jev-rerank-bench) | ![](https://badgen.net/github/stars/anessbelbati/jev-rerank-bench) | 重排序对比：原始 provider 响应、打分代码、不确定区间、写明的局限 |
@@ -931,8 +931,8 @@ python bench/vendor_bench.py          # 跑全部已配置的 provider，结果�
 | :-- | :-- | :-- |
 | [**yibie/awesome-jev**](https://github.com/yibie/awesome-jev) | ![](https://badgen.net/github/stars/yibie/awesome-jev) | 收录讨论与集成，含社区争论 |
 | [**Anil-matcha/awesome-jev-by-typesafe**](https://github.com/Anil-matcha/awesome-jev-by-typesafe) | ![](https://badgen.net/github/stars/Anil-matcha/awesome-jev-by-typesafe) | 偏用例、模式、prompt 与起步代码 |
-| [**AbdelStark/awesome-typesafe**](https://github.com/AbdelStark/awesome-typesafe) | ![](https://badgen.net/github/stars/AbdelStark/awesome-typesafe) | 覆盖整个 TypeSafe / System One，不只 Jev |
-| [**AnotiaWang/awesome-jev**](https://github.com/AnotiaWang/awesome-jev) | ![](https://badgen.net/github/stars/AnotiaWang/awesome-jev) | 结构最完整的一份，本列表的选品参考了它，[有 README_zh](https://github.com/AnotiaWang/awesome-jev/blob/main/README_zh.md) |
+| [**AbdelStark/awesome-typesafe**](https://github.com/AbdelStark/awesome-typesafe-jev) | ![](https://badgen.net/github/stars/AbdelStark/awesome-typesafe-jev) | 覆盖整个 TypeSafe / System One，不只 Jev |
+| [**AnotiaWang/awesome-jev**](https://github.com/AnotiaWang/awesome-decision-models) | ![](https://badgen.net/github/stars/AnotiaWang/awesome-decision-models) | 结构最完整的一份，本列表的选品参考了它，[有 README_zh](https://github.com/AnotiaWang/awesome-decision-models/blob/main/README_zh.md) |
 | [**valentynkit/awesome-jev-typesafe**](https://github.com/valentynkit/awesome-jev-typesafe) | ![](https://badgen.net/github/stars/valentynkit/awesome-jev-typesafe) | CC0 协议，按「你会安装什么」分类，开头一节讲模型局限，通过 awesome-lint |
 | [**andyrewlee/awesome-system-one**](https://github.com/andyrewlee/awesome-system-one) | ![](https://badgen.net/github/stars/andyrewlee/awesome-system-one) | 不只收 Jev，按品类收**所有** System One / 决策模型：托管与开源替代、SDK、基准榜单。查其他厂商的决策模型从这份开始 |
 | [**hellogumbo/awesome-jev**](https://github.com/hellogumbo/awesome-jev) | ![](https://badgen.net/github/stars/hellogumbo/awesome-jev) | 社区目录站形态 |
