@@ -884,7 +884,6 @@ python bench/vendor_bench.py          # 跑全部已配置的 provider，结果�
 | [Is the 200x Faster Decision Model Too Good to Be True?](https://flowtivity.ai/blog/jev-typesafe-ai-decision-model/) | 质疑向，和上面那篇对着读 |
 | [Generating game levels in real time with Jev](https://www.spritefusion.com/blog/generating-game-level-in-real-time-with-jev) | Sprite Fusion 的实战记录：跑酷地形实时生成，Jev 只选宽度、间隔、高度和地块类型，摆放交给游戏代码 |
 | [How to use Jev: first call in 5 minutes](https://madewithjev.com/how-to-use-jev) | 逐行拆解第一次调用：state、问题、带类型的答案，以及怎样按置信度分支；后面附 SDK、网关和 58 个视频教程（英文） |
-
 | [Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem](https://arxiv.org/abs/2609.30216) | 首个基于 2,170 个公开 GitHub Jev 项目的应用生态综述与分析，记录早期快速增长、应用领域和决策用途分布；论文为 arXiv 预印本。 |
 
 ### 中文实用文章
